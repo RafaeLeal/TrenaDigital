@@ -1,0 +1,6 @@
+
+State Machine - |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|state
+Name state.done state.shift state.start 
+state.start 0 0 0 
+state.shift 0 1 1 
+state.done 1 0 1 

@@ -1,0 +1,78 @@
+library IEEE;
+use IEEE.Std_logic_1164.all;
+use IEEE.Std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+ENTITY UC_sensor_de_distancia IS
+PORT(
+CLK : IN STD_LOGIC;
+MEDIR : IN STD_LOGIC;
+ECHO : IN STD_LOGIC;
+RESET : IN STD_LOGIC;
+TRIGGER : OUT STD_LOGIC;
+PRONTO : OUT STD_LOGIC;
+DEBUG_ESTADO : OUT STD_LOGIC_VECTOR(2 downto 0)
+);
+END ENTITY;
+ARCHITECTURE arch_UC_sensor_de_distancia OF UC_sensor_de_distancia IS
+TYPE tipo_estado IS (s0, s1, s2, s3, s4);
+-- s0: Aguarda MEDIR
+-- s1: Ativa o TRIGGER
+-- s2: Aguarda o ECHO
+-- s3: Conta ECHO
+-- s4: Mostra MEDIDA e da PRONTO
+SIGNAL estado : tipo_estado := s0;
+SIGNAL DELAY : INTEGER RANGE 0 to 500 := 0;
+BEGIN
+PROCESS (CLK)
+BEGIN
+IF (CLK = '1' and CLK'EVENT) THEN
+	IF (RESET = '1') THEN
+		estado <= s0;
+		DELAY <= 0;
+	ELSE
+		IF (MEDIR = '1' and estado = s0) THEN
+			estado <= s1;
+		END IF;
+		
+		IF (estado = s1 and DELAY = 500) THEN
+			estado <= s2;
+			DELAY <= 0;
+		ELSE
+			DELAY <= DELAY + 1;
+		END IF;
+		
+		IF (ECHO = '1' and estado = s2) THEN
+			estado <= s3;
+		ELSIF (ECHO = '0' and estado = s3) THEN
+			estado <= s4;
+		END IF;	
+	END IF;
+end if;
+END PROCESS;
+
+PROCESS (estado)
+BEGIN
+	CASE estado IS
+	WHEN s0 =>
+		TRIGGER <= '0';
+		PRONTO <= '0';
+		DEBUG_ESTADO <= "000";
+	WHEN s1 =>
+		TRIGGER <= '1';
+		PRONTO <= '0';
+		DEBUG_ESTADO <= "001";
+	WHEN s2 =>
+		TRIGGER <= '0';
+		PRONTO <= '0';
+		DEBUG_ESTADO <= "010";
+	WHEN s3 =>
+		TRIGGER <= '0';
+		PRONTO <= '0';
+		DEBUG_ESTADO <= "011";
+	WHEN s4 =>
+		TRIGGER <= '0';
+		PRONTO <= '1';
+		DEBUG_ESTADO <= "100";
+	END CASE;
+END PROCESS;
+END ARCHITECTURE;
