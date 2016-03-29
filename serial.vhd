@@ -40,6 +40,7 @@
  IDATA <= STARTBIT & DIN & STOPBIT;
  SDOUT <= '1';
  COUNT <= 0;
+ DONE <= '0';
  when "10" => -- shift left
  SDOUT <= STARTBIT;
  SDOUT <= IDATA(9);

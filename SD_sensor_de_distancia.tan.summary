@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 5.393 ns
-From           : ECHO
-To             : contador:CONT|MEDIDA[5]
+Actual Time    : 6.364 ns
+From           : RESET
+To             : serial:SERIE|COUNT2[0]
 From Clock     : --
 To Clock       : CLK
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 11.930 ns
-From           : contador:CONT|PRONTO
-To             : A7SEG0[2]
+Actual Time    : 10.683 ns
+From           : binary_bcd:BIN_TO_BCD|bcds_out_reg[2]
+To             : A7SEG0[0]
 From Clock     : CLK
 To Clock       : --
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 2.153 ns
-From           : altera_internal_jtag~TMSUTAP
-To             : sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|tms_cnt[0]
+Actual Time    : 1.718 ns
+From           : altera_internal_jtag~TDIUTAP
+To             : sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_basic_multi_level_trigger:\basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|lpm_shiftreg:trigger_condition_deserialize|dffs[2]
 From Clock     : --
 To Clock       : altera_internal_jtag~TCKUTAP
 Failed Paths   : 0
@@ -45,7 +45,7 @@ Failed Paths   : 0
 Type           : Clock Setup: 'CLK'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 110.20 MHz ( period = 9.074 ns )
+Actual Time    : 101.38 MHz ( period = 9.864 ns )
 From           : divisor:DIVI|RESP[7]
 To             : binary_bcd:BIN_TO_BCD|binary[7]
 From Clock     : CLK
@@ -55,8 +55,8 @@ Failed Paths   : 0
 Type           : Clock Setup: 'altera_internal_jtag~TCKUTAP'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 133.16 MHz ( period = 7.510 ns )
-From           : sld_hub:auto_hub|irf_reg[1][5]
+Actual Time    : 130.04 MHz ( period = 7.690 ns )
+From           : sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_rom_sr:crc_rom_sr|WORD_SR[0]
 To             : sld_hub:auto_hub|tdo
 From Clock     : altera_internal_jtag~TCKUTAP
 To Clock       : altera_internal_jtag~TCKUTAP
@@ -66,8 +66,8 @@ Type           : Clock Hold: 'CLK'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : contador:CONT|MEDIDA[11]
-To             : divisor:DIVI|RESP[0]
+From           : contador:CONT|MEDIDA[14]
+To             : divisor:DIVI|RESP[3]
 From Clock     : CLK
 To Clock       : CLK
 Failed Paths   : 78

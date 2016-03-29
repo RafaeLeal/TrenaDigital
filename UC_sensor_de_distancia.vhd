@@ -3,15 +3,15 @@ use IEEE.Std_logic_1164.all;
 use IEEE.Std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 ENTITY UC_sensor_de_distancia IS
-PORT(
-CLK : IN STD_LOGIC;
-MEDIR : IN STD_LOGIC;
-ECHO : IN STD_LOGIC;
-RESET : IN STD_LOGIC;
-TRIGGER : OUT STD_LOGIC;
-PRONTO : OUT STD_LOGIC;
-DEBUG_ESTADO : OUT STD_LOGIC_VECTOR(2 downto 0)
-);
+	PORT(
+		CLK 			: IN STD_LOGIC;
+		MEDIR 			: IN STD_LOGIC;
+		ECHO 			: IN STD_LOGIC;
+		RESET 			: IN STD_LOGIC;
+		TRIGGER			: OUT STD_LOGIC;
+		PRONTO 			: OUT STD_LOGIC;
+		DEBUG_ESTADO 	: OUT STD_LOGIC_VECTOR(2 downto 0)
+	);
 END ENTITY;
 ARCHITECTURE arch_UC_sensor_de_distancia OF UC_sensor_de_distancia IS
 TYPE tipo_estado IS (s0, s1, s2, s3, s4);

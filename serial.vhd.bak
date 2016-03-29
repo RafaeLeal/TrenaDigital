@@ -35,11 +35,12 @@
  case MODE is
 
  when "00" => -- no operation
- SDOUT <= '1';
+ null;
  when "01" => -- load operation
  IDATA <= STARTBIT & DIN & STOPBIT;
  SDOUT <= '1';
  COUNT <= 0;
+ DONE <= 0;
  when "10" => -- shift left
  SDOUT <= STARTBIT;
  SDOUT <= IDATA(9);
