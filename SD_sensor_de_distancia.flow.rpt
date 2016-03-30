@@ -1,5 +1,5 @@
 Flow report for SD_sensor_de_distancia
-Tue Mar 29 23:20:22 2016
+Wed Mar 30 01:52:14 2016
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,19 +38,19 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 29 23:20:22 2016        ;
+; Flow Status                        ; Successful - Wed Mar 30 01:52:13 2016        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; SD_sensor_de_distancia                       ;
-; Top-level Entity Name              ; FD_sensor_de_distancia                       ;
+; Top-level Entity Name              ; SD_sensor_de_distancia                       ;
 ; Family                             ; Cyclone II                                   ;
 ; Device                             ; EP2C35F672C6                                 ;
 ; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; No                                           ;
-; Total logic elements               ; 703 / 33,216 ( 2 % )                         ;
-;     Total combinational functions  ; 534 / 33,216 ( 2 % )                         ;
-;     Dedicated logic registers      ; 518 / 33,216 ( 2 % )                         ;
-; Total registers                    ; 518                                          ;
-; Total pins                         ; 100 / 475 ( 21 % )                           ;
+; Total logic elements               ; 744 / 33,216 ( 2 % )                         ;
+;     Total combinational functions  ; 577 / 33,216 ( 2 % )                         ;
+;     Dedicated logic registers      ; 536 / 33,216 ( 2 % )                         ;
+; Total registers                    ; 536                                          ;
+; Total pins                         ; 122 / 475 ( 26 % )                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 512 / 483,840 ( < 1 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                               ;
@@ -63,51 +63,50 @@ applicable agreement for further details.
 +-------------------+------------------------+
 ; Option            ; Setting                ;
 +-------------------+------------------------+
-; Start date & time ; 03/29/2016 23:20:11    ;
+; Start date & time ; 03/30/2016 01:52:02    ;
 ; Main task         ; Compilation            ;
 ; Revision Name     ; SD_sensor_de_distancia ;
 +-------------------+------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                        ;
-+------------------------------------+-----------------------------------------------+------------------------+------------------------+------------------+
-; Assignment Name                    ; Value                                         ; Default Value          ; Entity Name            ; Section Id       ;
-+------------------------------------+-----------------------------------------------+------------------------+------------------------+------------------+
-; COMPILER_SIGNATURE_ID              ; 10995770589184.145930441113124                ; --                     ; --                     ; --               ;
-; ENABLE_SIGNALTAP                   ; On                                            ; --                     ; --                     ; --               ;
-; MAX_CORE_JUNCTION_TEMP             ; 85                                            ; --                     ; --                     ; --               ;
-; MIN_CORE_JUNCTION_TEMP             ; 0                                             ; --                     ; --                     ; --               ;
-; MISC_FILE                          ; SD_sensor_de_distancia.dpf                    ; --                     ; --                     ; --               ;
-; PARTITION_COLOR                    ; 16764057                                      ; --                     ; FD_sensor_de_distancia ; Top              ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                                        ; --                     ; FD_sensor_de_distancia ; Top              ;
-; SLD_NODE_CREATOR_ID                ; 110                                           ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_ENTITY_NAME               ; sld_signaltap                                 ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_DATA_BITS=4                               ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_NODE_INFO=805334528                       ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_POWER_UP_TRIGGER=0                        ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0 ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_SEGMENT_SIZE=128                          ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_ATTRIBUTE_MEM_MODE=OFF                    ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_STATE_FLOW_USE_GENERATED=0                ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_STATE_BITS=11                             ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_BUFFER_FULL_STOP=1                        ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_CURRENT_RESOURCE_WIDTH=1                  ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_TRIGGER_LEVEL=1                           ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_SAMPLE_DEPTH=128                          ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_TRIGGER_IN_ENABLED=0                      ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,          ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_TRIGGER_LEVEL_PIPELINE=1                  ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_ENABLE_ADVANCED_TRIGGER=0                 ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_TRIGGER_BITS=1                            ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_INVERSION_MASK=000000000000000000000000   ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_INVERSION_MASK_LENGTH=24                  ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_NODE_CRC_LOWORD=26685                     ; --                     ; --                     ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_NODE_CRC_HIWORD=12326                     ; --                     ; --                     ; auto_signaltap_0 ;
-; TOP_LEVEL_ENTITY                   ; FD_sensor_de_distancia                        ; SD_sensor_de_distancia ; --                     ; --               ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                           ; --                     ; --                     ; eda_blast_fpga   ;
-; USE_SIGNALTAP_FILE                 ; stp1.stp                                      ; --                     ; --                     ; --               ;
-+------------------------------------+-----------------------------------------------+------------------------+------------------------+------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                    ;
++------------------------------------+-----------------------------------------------+---------------+-------------+------------------+
+; Assignment Name                    ; Value                                         ; Default Value ; Entity Name ; Section Id       ;
++------------------------------------+-----------------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID              ; 10995770589184.145931352217136                ; --            ; --          ; --               ;
+; ENABLE_SIGNALTAP                   ; On                                            ; --            ; --          ; --               ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                                            ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                                             ; --            ; --          ; --               ;
+; MISC_FILE                          ; SD_sensor_de_distancia.dpf                    ; --            ; --          ; --               ;
+; PARTITION_COLOR                    ; 16764057                                      ; --            ; --          ; Top              ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                                        ; --            ; --          ; Top              ;
+; SLD_NODE_CREATOR_ID                ; 110                                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME               ; sld_signaltap                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_DATA_BITS=4                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_NODE_INFO=805334528                       ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_POWER_UP_TRIGGER=0                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_SEGMENT_SIZE=128                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_ATTRIBUTE_MEM_MODE=OFF                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_STATE_FLOW_USE_GENERATED=0                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_STATE_BITS=11                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_BUFFER_FULL_STOP=1                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_CURRENT_RESOURCE_WIDTH=1                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_TRIGGER_LEVEL=1                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_SAMPLE_DEPTH=128                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_TRIGGER_IN_ENABLED=0                      ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_TRIGGER_LEVEL_PIPELINE=1                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_ENABLE_ADVANCED_TRIGGER=0                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_TRIGGER_BITS=1                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_INVERSION_MASK=000000000000000000000000   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_INVERSION_MASK_LENGTH=24                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_NODE_CRC_LOWORD=26685                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT      ; SLD_NODE_CRC_HIWORD=12326                     ; --            ; --          ; auto_signaltap_0 ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                           ; --            ; --          ; eda_blast_fpga   ;
+; USE_SIGNALTAP_FILE                 ; stp1.stp                                      ; --            ; --          ; --               ;
++------------------------------------+-----------------------------------------------+---------------+-------------+------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -115,11 +114,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 284 MB              ; 00:00:04                           ;
-; Fitter                  ; 00:00:05     ; 1.0                     ; 323 MB              ; 00:00:05                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 289 MB              ; 00:00:01                           ;
+; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 284 MB              ; 00:00:04                           ;
+; Fitter                  ; 00:00:05     ; 1.0                     ; 324 MB              ; 00:00:05                           ;
+; Assembler               ; 00:00:02     ; 1.0                     ; 289 MB              ; 00:00:02                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 199 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:08     ; --                      ; --                  ; 00:00:10                           ;
+; Total                   ; 00:00:10     ; --                      ; --                  ; 00:00:11                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

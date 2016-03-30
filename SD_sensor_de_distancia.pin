@@ -88,9 +88,9 @@ GND                          : A15       : gnd    :                   :         
 VCCIO4                       : A16       : power  :                   : 3.3V    : 4         :                
 GND*                         : A17       :        :                   :         : 4         :                
 GND*                         : A18       :        :                   :         : 4         :                
-MEDIDA[10]                   : A19       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : A20       :        :                   :         : 4         :                
-GND*                         : A21       :        :                   :         : 4         :                
+MEDIDA[11]                   : A19       : output : 3.3-V LVTTL       :         : 4         : N              
+CLK2                         : A20       : input  : 3.3-V LVTTL       :         : 4         : N              
+FD_DEBUG_SERIAL0             : A21       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : A22       :        :                   :         : 4         :                
 GND*                         : A23       :        :                   :         : 4         :                
 VCCIO4                       : A24       : power  :                   : 3.3V    : 4         :                
@@ -110,11 +110,11 @@ GND*                         : AA12      :        :                   :         
 GND*                         : AA13      :        :                   :         : 7         :                
 GND*                         : AA14      :        :                   :         : 7         :                
 GND*                         : AA15      :        :                   :         : 7         :                
-GND*                         : AA16      :        :                   :         : 7         :                
-GND*                         : AA17      :        :                   :         : 7         :                
-GND*                         : AA18      :        :                   :         : 7         :                
+MODO_ATUAL                   : AA16      : output : 3.3-V LVTTL       :         : 7         : N              
+MEDIDA[8]                    : AA17      : output : 3.3-V LVTTL       :         : 7         : N              
+MEDIDA[1]                    : AA18      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCA_PLL4                    : AA19      : power  :                   : 1.2V    :           :                
-serial_DEBUG_IDATA[24]       : AA20      : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[17]       : AA20      : output : 3.3-V LVTTL       :         : 7         : N              
 GND_PLL4                     : AA21      : gnd    :                   :         :           :                
 VCCIO6                       : AA22      : power  :                   : 3.3V    : 6         :                
 A7SEG1[5]                    : AA23      : output : 3.3-V LVTTL       :         : 6         : Y              
@@ -140,8 +140,8 @@ GND                          : AB16      : gnd    :                   :         
 VCCIO7                       : AB17      : power  :                   : 3.3V    : 7         :                
 GND*                         : AB18      :        :                   :         : 7         :                
 GND                          : AB19      : gnd    :                   :         :           :                
-serial_DEBUG_IDATA[17]       : AB20      : output : 3.3-V LVTTL       :         : 7         : N              
-GND*                         : AB21      :        :                   :         : 7         :                
+serial_DEBUG_IDATA[3]        : AB20      : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[29]       : AB21      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO7                       : AB22      : power  :                   : 3.3V    : 7         :                
 A7SEG2[0]                    : AB23      : output : 3.3-V LVTTL       :         : 6         : Y              
 A7SEG1[6]                    : AB24      : output : 3.3-V LVTTL       :         : 6         : Y              
@@ -157,18 +157,18 @@ GND*                         : AC7       :        :                   :         
 GND*                         : AC8       :        :                   :         : 8         :                
 GND*                         : AC9       :        :                   :         : 8         :                
 GND*                         : AC10      :        :                   :         : 8         :                
-FD_DEBUG_SERIAL3             : AC11      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AC11      :        :                   :         : 8         :                
 A7SEG0[2]                    : AC12      : output : 3.3-V LVTTL       :         : 8         : Y              
 GND+                         : AC13      :        :                   :         : 8         :                
 GND*                         : AC14      :        :                   :         : 7         :                
 GND*                         : AC15      :        :                   :         : 7         :                
 GND*                         : AC16      :        :                   :         : 7         :                
 GND*                         : AC17      :        :                   :         : 7         :                
-GND*                         : AC18      :        :                   :         : 7         :                
-serial_DEBUG_IDATA[0]        : AC19      : output : 3.3-V LVTTL       :         : 7         : N              
-serial_DEBUG_IDATA[2]        : AC20      : output : 3.3-V LVTTL       :         : 7         : N              
-serial_DEBUG_IDATA[12]       : AC21      : output : 3.3-V LVTTL       :         : 7         : N              
-FD_DEBUG_MODE[1]             : AC22      : output : 3.3-V LVTTL       :         : 7         : N              
+UC_DEBUG_ESTADO[2]           : AC18      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AC19      :        :                   :         : 7         :                
+serial_DEBUG_IDATA[1]        : AC20      : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[32]       : AC21      : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[40]       : AC22      : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AC23      :        :                   :         : 6         :                
 NC                           : AC24      :        :                   :         :           :                
 A7SEG2[2]                    : AC25      : output : 3.3-V LVTTL       :         : 6         : Y              
@@ -191,11 +191,11 @@ GND*                         : AD15      :        :                   :         
 GND*                         : AD16      :        :                   :         : 7         :                
 GND*                         : AD17      :        :                   :         : 7         :                
 GND                          : AD18      : gnd    :                   :         :           :                
-GND*                         : AD19      :        :                   :         : 7         :                
+serial_DEBUG_IDATA[0]        : AD19      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO7                       : AD20      : power  :                   : 3.3V    : 7         :                
-serial_DEBUG_IDATA[37]       : AD21      : output : 3.3-V LVTTL       :         : 7         : N              
-serial_DEBUG_IDATA[30]       : AD22      : output : 3.3-V LVTTL       :         : 7         : N              
-serial_DEBUG_IDATA[34]       : AD23      : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[34]       : AD21      : output : 3.3-V LVTTL       :         : 7         : N              
+FD_DEBUG_BCD1[2]             : AD22      : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[30]       : AD23      : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AD24      :        :                   :         : 6         :                
 GND*                         : AD25      :        :                   :         : 6         :                
 VCCIO6                       : AD26      : power  :                   : 3.3V    : 6         :                
@@ -216,11 +216,11 @@ GND+                         : AE14      :        :                   :         
 GND*                         : AE15      :        :                   :         : 7         :                
 GND*                         : AE16      :        :                   :         : 7         :                
 GND*                         : AE17      :        :                   :         : 7         :                
-GND*                         : AE18      :        :                   :         : 7         :                
-GND*                         : AE19      :        :                   :         : 7         :                
-FD_DEBUG_MODE[0]             : AE20      : output : 3.3-V LVTTL       :         : 7         : N              
-serial_DEBUG_IDATA[4]        : AE21      : output : 3.3-V LVTTL       :         : 7         : N              
-serial_DEBUG_IDATA[11]       : AE22      : output : 3.3-V LVTTL       :         : 7         : N              
+LIGA                         : AE18      : input  : 3.3-V LVTTL       :         : 7         : N              
+SD_IMPRIMA                   : AE19      : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[2]        : AE20      : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[6]        : AE21      : output : 3.3-V LVTTL       :         : 7         : N              
+PRONTO                       : AE22      : output : 3.3-V LVTTL       :         : 7         : Y              
 GND*                         : AE23      :        :                   :         : 7         :                
 ~LVDS150p/nCEO~              : AE24      : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : AE25      :        :                   :         : 6         :                
@@ -237,22 +237,22 @@ A7SEG0[0]                    : AF10      : output : 3.3-V LVTTL       :         
 VCCIO8                       : AF11      : power  :                   : 3.3V    : 8         :                
 GND                          : AF12      : gnd    :                   :         :           :                
 GND*                         : AF13      :        :                   :         : 8         :                
-IMPRIME                      : AF14      : input  : 3.3-V LVTTL       :         : 7         : N              
+GND+                         : AF14      :        :                   :         : 7         :                
 GND                          : AF15      : gnd    :                   :         :           :                
 VCCIO7                       : AF16      : power  :                   : 3.3V    : 7         :                
 GND*                         : AF17      :        :                   :         : 7         :                
-GND*                         : AF18      :        :                   :         : 7         :                
-GND*                         : AF19      :        :                   :         : 7         :                
+FD_DEBUG_MODE[0]             : AF18      : output : 3.3-V LVTTL       :         : 7         : N              
+UC_DEBUG_ESTADO[1]           : AF19      : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AF20      :        :                   :         : 7         :                
-serial_DEBUG_IDATA[1]        : AF21      : output : 3.3-V LVTTL       :         : 7         : N              
-serial_DEBUG_IDATA[9]        : AF22      : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[4]        : AF21      : output : 3.3-V LVTTL       :         : 7         : N              
+FD_DEBUG_BCD1[0]             : AF22      : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AF23      :        :                   :         : 7         :                
 VCCIO7                       : AF24      : power  :                   : 3.3V    : 7         :                
 GND                          : AF25      : gnd    :                   :         :           :                
 GND                          : B1        : gnd    :                   :         :           :                
 GND*                         : B2        :        :                   :         : 2         :                
 GND*                         : B3        :        :                   :         : 2         :                
-FD_DEBUG_SERIAL2             : B4        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : B4        :        :                   :         : 3         :                
 GND*                         : B5        :        :                   :         : 3         :                
 GND*                         : B6        :        :                   :         : 3         :                
 GND*                         : B7        :        :                   :         : 3         :                
@@ -267,11 +267,11 @@ GND*                         : B15       :        :                   :         
 GND*                         : B16       :        :                   :         : 4         :                
 GND*                         : B17       :        :                   :         : 4         :                
 GND*                         : B18       :        :                   :         : 4         :                
-GND*                         : B19       :        :                   :         : 4         :                
-GND*                         : B20       :        :                   :         : 4         :                
-GND*                         : B21       :        :                   :         : 4         :                
-GND*                         : B22       :        :                   :         : 4         :                
-serial_DEBUG_IDATA[35]       : B23       : output : 3.3-V LVTTL       :         : 4         : N              
+MEDIDA[14]                   : B19       : output : 3.3-V LVTTL       :         : 4         : N              
+serial_DEBUG_IDATA[14]       : B20       : output : 3.3-V LVTTL       :         : 4         : N              
+SERIAL                       : B21       : output : 3.3-V LVTTL       :         : 4         : N              
+FD_DEBUG_BCD3[0]             : B22       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : B23       :        :                   :         : 4         :                
 GND*                         : B24       :        :                   :         : 5         :                
 GND*                         : B25       :        :                   :         : 5         :                
 GND                          : B26       : gnd    :                   :         :           :                
@@ -293,7 +293,7 @@ GND*                         : C15       :        :                   :         
 GND*                         : C16       :        :                   :         : 4         :                
 GND*                         : C17       :        :                   :         : 4         :                
 GND                          : C18       : gnd    :                   :         :           :                
-MEDIDA[11]                   : C19       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : C19       :        :                   :         : 4         :                
 VCCIO4                       : C20       : power  :                   : 3.3V    : 4         :                
 GND*                         : C21       :        :                   :         : 4         :                
 GND*                         : C22       :        :                   :         : 4         :                
@@ -318,10 +318,10 @@ GND*                         : D14       :        :                   :         
 GND*                         : D15       :        :                   :         : 4         :                
 GND*                         : D16       :        :                   :         : 4         :                
 GND*                         : D17       :        :                   :         : 4         :                
-MEDIDA[3]                    : D18       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : D19       :        :                   :         : 4         :                
-GND*                         : D20       :        :                   :         : 4         :                
-GND*                         : D21       :        :                   :         : 4         :                
+MEDIDA[10]                   : D18       : output : 3.3-V LVTTL       :         : 4         : N              
+MEDIDA[12]                   : D19       : output : 3.3-V LVTTL       :         : 4         : N              
+serial_DEBUG_IDATA[15]       : D20       : output : 3.3-V LVTTL       :         : 4         : N              
+serial_DEBUG_IDATA[36]       : D21       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : D22       : power  :                   : 3.3V    : 4         :                
 GND*                         : D23       :        :                   :         : 5         :                
 GND                          : D24       : gnd    :                   :         :           :                
@@ -346,7 +346,7 @@ GND                          : E16       : gnd    :                   :         
 VCCIO4                       : E17       : power  :                   : 3.3V    : 4         :                
 MEDIDA[6]                    : E18       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : E19       : gnd    :                   :         :           :                
-serial_DEBUG_IDATA[6]        : E20       : output : 3.3-V LVTTL       :         : 4         : N              
+serial_DEBUG_IDATA[13]       : E20       : output : 3.3-V LVTTL       :         : 4         : N              
 GND_PLL2                     : E21       : gnd    :                   :         :           :                
 GND*                         : E22       :        :                   :         : 5         :                
 GND*                         : E23       :        :                   :         : 5         :                
@@ -369,16 +369,16 @@ GND*                         : F13       :        :                   :         
 GND*                         : F14       :        :                   :         : 4         :                
 GND*                         : F15       :        :                   :         : 4         :                
 GND*                         : F16       :        :                   :         : 4         :                
-MEDIDA[7]                    : F17       : output : 3.3-V LVTTL       :         : 4         : N              
-MEDIDA[9]                    : F18       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : F17       :        :                   :         : 4         :                
+MEDIDA[7]                    : F18       : output : 3.3-V LVTTL       :         : 4         : N              
 GNDA_PLL2                    : F19       : gnd    :                   :         :           :                
 GND*                         : F20       :        :                   :         : 5         :                
 GND*                         : F21       :        :                   :         : 5         :                
 VCCIO5                       : F22       : power  :                   : 3.3V    : 5         :                
-MEDIDA[15]                   : F23       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : F23       :        :                   :         : 5         :                
 GND*                         : F24       :        :                   :         : 5         :                
 GND*                         : F25       :        :                   :         : 5         :                
-MEDIDA[2]                    : F26       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : F26       :        :                   :         : 5         :                
 GND*                         : G1        :        :                   :         : 2         :                
 GND*                         : G2        :        :                   :         : 2         :                
 GND*                         : G3        :        :                   :         : 2         :                
@@ -395,14 +395,14 @@ GND*                         : G13       :        :                   :         
 GND*                         : G14       :        :                   :         : 4         :                
 GND*                         : G15       :        :                   :         : 4         :                
 GND*                         : G16       :        :                   :         : 4         :                
-MEDIDA[0]                    : G17       : output : 3.3-V LVTTL       :         : 4         : N              
-MEDIDA[1]                    : G18       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : G17       :        :                   :         : 4         :                
+MEDIDA[9]                    : G18       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCA_PLL2                    : G19       : power  :                   : 1.2V    :           :                
 GND_PLL2                     : G20       : gnd    :                   :         :           :                
 GND*                         : G21       :        :                   :         : 5         :                
 GND*                         : G22       :        :                   :         : 5         :                
-MEDIDA[12]                   : G23       : output : 3.3-V LVTTL       :         : 5         : N              
-MEDIDA[14]                   : G24       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : G23       :        :                   :         : 5         :                
+GND*                         : G24       :        :                   :         : 5         :                
 GND*                         : G25       :        :                   :         : 5         :                
 GND*                         : G26       :        :                   :         : 5         :                
 GND*                         : H1        :        :                   :         : 2         :                
@@ -428,11 +428,11 @@ VCCD_PLL2                    : H20       : power  :                   : 1.2V    
 GND*                         : H21       :        :                   :         : 5         :                
 GND                          : H22       : gnd    :                   :         :           :                
 GND*                         : H23       :        :                   :         : 5         :                
-MEDIDA[4]                    : H24       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : H24       :        :                   :         : 5         :                
 GND*                         : H25       :        :                   :         : 5         :                
 GND*                         : H26       :        :                   :         : 5         :                
 GND*                         : J1        :        :                   :         : 2         :                
-GND*                         : J2        :        :                   :         : 2         :                
+MEDIDA[15]                   : J2        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : J3        :        :                   :         : 2         :                
 GND*                         : J4        :        :                   :         : 2         :                
 GND*                         : J5        :        :                   :         : 2         :                
@@ -446,17 +446,17 @@ VCCIO3                       : J12       : power  :                   : 3.3V    
 GND*                         : J13       :        :                   :         : 3         :                
 GND*                         : J14       :        :                   :         : 3         :                
 VCCIO4                       : J15       : power  :                   : 3.3V    : 4         :                
-serial_DEBUG_IDATA[27]       : J16       : output : 3.3-V LVTTL       :         : 4         : N              
-MEDIDA[8]                    : J17       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : J16       :        :                   :         : 4         :                
+MEDIDA[3]                    : J17       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : J18       :        :                   :         : 4         :                
 VCCIO5                       : J19       : power  :                   : 3.3V    : 5         :                
 GND*                         : J20       :        :                   :         : 5         :                
 GND*                         : J21       :        :                   :         : 5         :                
 GND*                         : J22       :        :                   :         : 5         :                
-GND*                         : J23       :        :                   :         : 5         :                
-GND*                         : J24       :        :                   :         : 5         :                
-GND*                         : J25       :        :                   :         : 5         :                
-GND*                         : J26       :        :                   :         : 5         :                
+serial_DEBUG_IDATA[9]        : J23       : output : 3.3-V LVTTL       :         : 5         : N              
+MEDIDA[0]                    : J24       : output : 3.3-V LVTTL       :         : 5         : N              
+serial_DEBUG_IDATA[10]       : J25       : output : 3.3-V LVTTL       :         : 5         : N              
+serial_DEBUG_IDATA[39]       : J26       : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : K1        :        :                   :         : 2         :                
 GND*                         : K2        :        :                   :         : 2         :                
 GND*                         : K3        :        :                   :         : 2         :                
@@ -472,17 +472,17 @@ VCCINT                       : K12       : power  :                   : 1.2V    
 VCCINT                       : K13       : power  :                   : 1.2V    :           :                
 VCCINT                       : K14       : power  :                   : 1.2V    :           :                
 VCCINT                       : K15       : power  :                   : 1.2V    :           :                
-serial_DEBUG_IDATA[23]       : K16       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : K16       :        :                   :         : 4         :                
 GND*                         : K17       :        :                   :         : 4         :                
-GND*                         : K18       :        :                   :         : 5         :                
-GND*                         : K19       :        :                   :         : 5         :                
+serial_DEBUG_IDATA[43]       : K18       : output : 3.3-V LVTTL       :         : 5         : N              
+serial_DEBUG_IDATA[35]       : K19       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : K20       : gnd    :                   :         :           :                
-GND*                         : K21       :        :                   :         : 5         :                
-MEDIDA[13]                   : K22       : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : K23       :        :                   :         : 5         :                
-GND*                         : K24       :        :                   :         : 5         :                
-GND*                         : K25       :        :                   :         : 5         :                
-GND*                         : K26       :        :                   :         : 5         :                
+serial_DEBUG_IDATA[12]       : K21       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : K22       :        :                   :         : 5         :                
+serial_DEBUG_IDATA[11]       : K23       : output : 3.3-V LVTTL       :         : 5         : N              
+serial_DEBUG_IDATA[33]       : K24       : output : 3.3-V LVTTL       :         : 5         : N              
+MEDIR                        : K25       : input  : 3.3-V LVTTL       :         : 5         : Y              
+TRIGGER                      : K26       : output : 3.3-V LVTTL       :         : 5         : Y              
 VCCIO2                       : L1        : power  :                   : 3.3V    : 2         :                
 GND*                         : L2        :        :                   :         : 2         :                
 GND*                         : L3        :        :                   :         : 2         :                
@@ -491,7 +491,7 @@ GND                          : L5        : gnd    :                   :         
 GND*                         : L6        :        :                   :         : 2         :                
 GND*                         : L7        :        :                   :         : 2         :                
 altera_reserved_tms          : L8        : input  : 3.3-V LVTTL       :         : 2         : N              
-FD_DEBUG_sel                 : L9        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : L9        :        :                   :         : 2         :                
 GND*                         : L10       :        :                   :         : 2         :                
 VCCINT                       : L11       : power  :                   : 1.2V    :           :                
 GND                          : L12       : gnd    :                   :         :           :                
@@ -501,13 +501,13 @@ GND                          : L15       : gnd    :                   :         
 VCCINT                       : L16       : power  :                   : 1.2V    :           :                
 VCCINT                       : L17       : power  :                   : 1.2V    :           :                
 VCCINT                       : L18       : power  :                   : 1.2V    :           :                
-GND*                         : L19       :        :                   :         : 5         :                
-GND*                         : L20       :        :                   :         : 5         :                
-GND*                         : L21       :        :                   :         : 5         :                
+FD_DEBUG_BCD0[0]             : L19       : output : 3.3-V LVTTL       :         : 5         : N              
+serial_DEBUG_IDATA[5]        : L20       : output : 3.3-V LVTTL       :         : 5         : N              
+MEDIDA[13]                   : L21       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : L22       : gnd    :                   :         :           :                
-GND*                         : L23       :        :                   :         : 5         :                
-GND*                         : L24       :        :                   :         : 5         :                
-GND*                         : L25       :        :                   :         : 5         :                
+FD_DEBUG_BCD0[1]             : L23       : output : 3.3-V LVTTL       :         : 5         : N              
+FD_DEBUG_BCD0[3]             : L24       : output : 3.3-V LVTTL       :         : 5         : N              
+FD_DEBUG_BCD0[2]             : L25       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : L26       : power  :                   : 3.3V    : 5         :                
 GND                          : M1        : gnd    :                   :         :           :                
 GND*                         : M2        :        :                   :         : 2         :                
@@ -527,13 +527,13 @@ GND                          : M15       : gnd    :                   :         
 VCCINT                       : M16       : power  :                   : 1.2V    :           :                
 VCCINT                       : M17       : power  :                   : 1.2V    :           :                
 VCCIO5                       : M18       : power  :                   : 3.3V    : 5         :                
-GND*                         : M19       :        :                   :         : 5         :                
-GND*                         : M20       :        :                   :         : 5         :                
-GND*                         : M21       :        :                   :         : 5         :                
+serial_DEBUG_IDATA[19]       : M19       : output : 3.3-V LVTTL       :         : 5         : N              
+serial_DEBUG_IDATA[8]        : M20       : output : 3.3-V LVTTL       :         : 5         : N              
+serial_DEBUG_IDATA[38]       : M21       : output : 3.3-V LVTTL       :         : 5         : N              
 ECHO                         : M22       : input  : 3.3-V LVTTL       :         : 5         : Y              
 RESET                        : M23       : input  : 3.3-V LVTTL       :         : 5         : Y              
-serial_DEBUG_IDATA[7]        : M24       : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : M25       :        :                   :         : 5         :                
+FD_DEBUG_BCD3[3]             : M24       : output : 3.3-V LVTTL       :         : 5         : N              
+serial_DEBUG_IDATA[27]       : M25       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : M26       : gnd    :                   :         :           :                
 GND+                         : N1        :        :                   :         : 2         :                
 CLK                          : N2        : input  : 3.3-V LVTTL       :         : 2         : Y              
@@ -554,16 +554,16 @@ GND                          : N16       : gnd    :                   :         
 VCCINT                       : N17       : power  :                   : 1.2V    :           :                
 GND*                         : N18       :        :                   :         : 5         :                
 GND                          : N19       : gnd    :                   :         :           :                
-GND*                         : N20       :        :                   :         : 5         :                
+UC_DEBUG_ESTADO[0]           : N20       : output : 3.3-V LVTTL       :         : 5         : N              
 NC                           : N21       :        :                   :         :           :                
 VCCIO5                       : N22       : power  :                   : 3.3V    : 5         :                
-GND*                         : N23       :        :                   :         : 5         :                
-GND*                         : N24       :        :                   :         : 5         :                
+FD_DEBUG_BCD2[0]             : N23       : output : 3.3-V LVTTL       :         : 5         : N              
+serial_DEBUG_IDATA[18]       : N24       : output : 3.3-V LVTTL       :         : 5         : N              
 GND+                         : N25       :        :                   :         : 5         :                
 GND+                         : N26       :        :                   :         : 5         :                
 GND+                         : P1        :        :                   :         : 1         :                
 GND+                         : P2        :        :                   :         : 1         :                
-GND*                         : P3        :        :                   :         : 1         :                
+CLK2_OUT                     : P3        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : P4        :        :                   :         : 1         :                
 VCCIO1                       : P5        : power  :                   : 3.3V    : 1         :                
 GND*                         : P6        :        :                   :         : 1         :                
@@ -577,19 +577,19 @@ GND                          : P13       : gnd    :                   :         
 GND                          : P14       : gnd    :                   :         :           :                
 GND                          : P15       : gnd    :                   :         :           :                
 GND                          : P16       : gnd    :                   :         :           :                
-serial_DEBUG_IDATA[31]       : P17       : output : 3.3-V LVTTL       :         : 6         : N              
+serial_DEBUG_IDATA[37]       : P17       : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : P18       :        :                   :         : 5         :                
 GND                          : P19       : gnd    :                   :         :           :                
 MSEL0                        : P20       :        :                   :         : 6         :                
 MSEL1                        : P21       :        :                   :         : 6         :                
 VCCIO6                       : P22       : power  :                   : 3.3V    : 6         :                
-serial_DEBUG_IDATA[10]       : P23       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[20]       : P24       : output : 3.3-V LVTTL       :         : 6         : N              
+serial_DEBUG_IDATA[31]       : P23       : output : 3.3-V LVTTL       :         : 6         : N              
+serial_DEBUG_IDATA[28]       : P24       : output : 3.3-V LVTTL       :         : 6         : N              
 GND+                         : P25       :        :                   :         : 6         :                
 GND+                         : P26       :        :                   :         : 6         :                
 GND                          : R1        : gnd    :                   :         :           :                
 GND*                         : R2        :        :                   :         : 1         :                
-GND*                         : R3        :        :                   :         : 1         :                
+serial_DEBUG_IDATA[16]       : R3        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : R4        :        :                   :         : 1         :                
 GND*                         : R5        :        :                   :         : 1         :                
 GND*                         : R6        :        :                   :         : 1         :                
@@ -603,15 +603,15 @@ GND                          : R13       : gnd    :                   :         
 GND                          : R14       : gnd    :                   :         :           :                
 GND                          : R15       : gnd    :                   :         :           :                
 VCCINT                       : R16       : power  :                   : 1.2V    :           :                
-serial_DEBUG_IDATA[21]       : R17       : output : 3.3-V LVTTL       :         : 6         : N              
+FD_DEBUG_BCD2[1]             : R17       : output : 3.3-V LVTTL       :         : 6         : N              
 VCCIO6                       : R18       : power  :                   : 3.3V    : 6         :                
-serial_DEBUG_IDATA[36]       : R19       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[14]       : R20       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : R19       :        :                   :         : 6         :                
+FD_DEBUG_BCD1[1]             : R20       : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : R21       : gnd    :                   :         :           :                
 nSTATUS                      : R22       :        :                   :         : 6         :                
 CONF_DONE                    : R23       :        :                   :         : 6         :                
-serial_DEBUG_IDATA[13]       : R24       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[8]        : R25       : output : 3.3-V LVTTL       :         : 6         : N              
+serial_DEBUG_IDATA[42]       : R24       : output : 3.3-V LVTTL       :         : 6         : N              
+serial_DEBUG_IDATA[25]       : R25       : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : R26       : gnd    :                   :         :           :                
 VCCIO1                       : T1        : power  :                   : 3.3V    : 1         :                
 GND*                         : T2        :        :                   :         : 1         :                
@@ -629,17 +629,17 @@ GND                          : T13       : gnd    :                   :         
 GND                          : T14       : gnd    :                   :         :           :                
 GND                          : T15       : gnd    :                   :         :           :                
 VCCINT                       : T16       : power  :                   : 1.2V    :           :                
-serial_DEBUG_IDATA[40]       : T17       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[25]       : T18       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[3]        : T19       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[41]       : T20       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[33]       : T21       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[18]       : T22       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[16]       : T23       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[39]       : T24       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[32]       : T25       : output : 3.3-V LVTTL       :         : 6         : N              
+FD_DEBUG_BCD3[1]             : T17       : output : 3.3-V LVTTL       :         : 6         : N              
+FD_DEBUG_BCD1[3]             : T18       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : T19       :        :                   :         : 6         :                
+FD_DEBUG_BCD2[3]             : T20       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : T21       :        :                   :         : 6         :                
+FD_DEBUG_BCD3[2]             : T22       : output : 3.3-V LVTTL       :         : 6         : N              
+FD_DEBUG_BCD2[2]             : T23       : output : 3.3-V LVTTL       :         : 6         : N              
+serial_DEBUG_IDATA[20]       : T24       : output : 3.3-V LVTTL       :         : 6         : N              
+serial_DEBUG_IDATA[41]       : T25       : output : 3.3-V LVTTL       :         : 6         : N              
 VCCIO6                       : T26       : power  :                   : 3.3V    : 6         :                
-FD_DEBUG_SERIAL1             : U1        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : U1        :        :                   :         : 1         :                
 GND*                         : U2        :        :                   :         : 1         :                
 GND*                         : U3        :        :                   :         : 1         :                
 GND*                         : U4        :        :                   :         : 1         :                
@@ -655,16 +655,16 @@ VCCINT                       : U13       : power  :                   : 1.2V    
 VCCINT                       : U14       : power  :                   : 1.2V    :           :                
 VCCINT                       : U15       : power  :                   : 1.2V    :           :                
 VCCINT                       : U16       : power  :                   : 1.2V    :           :                
-serial_DEBUG_IDATA[29]       : U17       : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[23]       : U17       : output : 3.3-V LVTTL       :         : 7         : N              
 serial_DEBUG_IDATA[22]       : U18       : output : 3.3-V LVTTL       :         : 7         : N              
 GND                          : U19       : gnd    :                   :         :           :                
-serial_DEBUG_IDATA[5]        : U20       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : U20       :        :                   :         : 6         :                
 GND*                         : U21       :        :                   :         : 6         :                
 A7SEG3[5]                    : U22       : output : 3.3-V LVTTL       :         : 6         : Y              
-serial_DEBUG_IDATA[42]       : U23       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[38]       : U24       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[43]       : U25       : output : 3.3-V LVTTL       :         : 6         : N              
-serial_DEBUG_IDATA[28]       : U26       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : U23       :        :                   :         : 6         :                
+GND*                         : U24       :        :                   :         : 6         :                
+GND*                         : U25       :        :                   :         : 6         :                
+GND*                         : U26       :        :                   :         : 6         :                
 GND*                         : V1        :        :                   :         : 1         :                
 GND*                         : V2        :        :                   :         : 1         :                
 GND*                         : V3        :        :                   :         : 1         :                
@@ -681,16 +681,16 @@ A7SEG0[6]                    : V13       : output : 3.3-V LVTTL       :         
 A7SEG0[5]                    : V14       : output : 3.3-V LVTTL       :         : 8         : Y              
 VCCIO7                       : V15       : power  :                   : 3.3V    : 7         :                
 VCCINT                       : V16       : power  :                   : 1.2V    :           :                
-GND*                         : V17       :        :                   :         : 7         :                
-serial_DEBUG_IDATA[15]       : V18       : output : 3.3-V LVTTL       :         : 7         : N              
+MEDIDA[4]                    : V17       : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[24]       : V18       : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO6                       : V19       : power  :                   : 3.3V    : 6         :                
 A7SEG1[0]                    : V20       : output : 3.3-V LVTTL       :         : 6         : Y              
 A7SEG1[1]                    : V21       : output : 3.3-V LVTTL       :         : 6         : Y              
 A7SEG2[1]                    : V22       : output : 3.3-V LVTTL       :         : 6         : Y              
 GND*                         : V23       :        :                   :         : 6         :                
 GND*                         : V24       :        :                   :         : 6         :                
-FD_DEBUG_SERIAL0             : V25       : output : 3.3-V LVTTL       :         : 6         : N              
-SAIDA_SERIAL                 : V26       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : V25       :        :                   :         : 6         :                
+serial_DEBUG_IDATA[26]       : V26       : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : W1        :        :                   :         : 1         :                
 GND*                         : W2        :        :                   :         : 1         :                
 GND*                         : W3        :        :                   :         : 1         :                
@@ -707,9 +707,9 @@ GND                          : W13       : gnd    :                   :         
 GND                          : W14       : gnd    :                   :         :           :                
 GND*                         : W15       :        :                   :         : 7         :                
 GND*                         : W16       :        :                   :         : 7         :                
-GND*                         : W17       :        :                   :         : 7         :                
+MEDIDA[2]                    : W17       : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO7                       : W18       : power  :                   : 3.3V    : 7         :                
-serial_DEBUG_IDATA[19]       : W19       : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[21]       : W19       : output : 3.3-V LVTTL       :         : 7         : N              
 GND_PLL4                     : W20       : gnd    :                   :         :           :                
 A7SEG1[2]                    : W21       : output : 3.3-V LVTTL       :         : 6         : Y              
 GND                          : W22       : gnd    :                   :         :           :                
@@ -732,9 +732,9 @@ GND*                         : Y12       :        :                   :         
 GND*                         : Y13       :        :                   :         : 7         :                
 GND*                         : Y14       :        :                   :         : 7         :                
 GND*                         : Y15       :        :                   :         : 7         :                
-GND*                         : Y16       :        :                   :         : 7         :                
+FD_DEBUG_MODE[1]             : Y16       : output : 3.3-V LVTTL       :         : 7         : N              
 GND                          : Y17       : gnd    :                   :         :           :                
-serial_DEBUG_IDATA[26]       : Y18       : output : 3.3-V LVTTL       :         : 7         : N              
+serial_DEBUG_IDATA[7]        : Y18       : output : 3.3-V LVTTL       :         : 7         : N              
 GNDA_PLL4                    : Y19       : gnd    :                   :         :           :                
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 GND*                         : Y21       :        :                   :         : 6         :                

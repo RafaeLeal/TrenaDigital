@@ -10,7 +10,7 @@
 		 CLK, RESET : in std_logic; -- clock and reset
 		 SDOUT : out std_logic; -- output data
 		 DONE : OUT STD_LOGIC;
-		 serial_DEBUG_IDATA : OUT STD_LOGIC_VECTOR(10 downto 0)
+		 serial_DEBUG_IDATA : OUT STD_LOGIC_VECTOR(43 downto 0)
 		 ); 
  END ENTITY;
 
@@ -54,7 +54,9 @@ FUNCTION fparidade (D : STD_LOGIC_VECTOR(7 downto 0)) RETURN STD_LOGIC IS
  IDATA1 <= STARTBIT & DIN1 & fparidade(DIN1) & STOPBIT;
  IDATA2 <= STARTBIT & DIN2 & fparidade(DIN2) & STOPBIT;
  IDATA3 <= STARTBIT & DIN3 & fparidade(DIN3) & STOPBIT;
- IDATA <= IDATA3 & IDATA2 & IDATA1 & IDATA0;
+ IDATA <= IDATA0 & IDATA3 & IDATA2 & IDATA1;
+ 
+ serial_DEBUG_IDATA <= IDATA;
  SDOUT <= '1';
  COUNT <= 0;
  DONE <= '0';

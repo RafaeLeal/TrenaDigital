@@ -1640,13 +1640,13 @@ VECTOR("C:/Users/Rafael Leal/Downloads/SD_sensor_de_distancia_restored/FD_sensor
 	}
 }
 
-VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3635] Laboratório Digital I/TrenaDigital/db/SD_sensor_de_distancia.sim.cvwf")
+VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3635] Laboratório Digital I/TrenaDigital/SD_sensor_de_distancia.vwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 1000000000;
+		ZBEGIN = 75000000;
+		ZEND = 100000000;
 		NUMERATOR = 1162;
-		DENOMINATOR = 1000000000;
+		DENOMINATOR = 25000000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -1666,7 +1666,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ECHO";
+		SIGNAL = "LIGA";
 		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
@@ -1674,7 +1674,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RESET";
+		SIGNAL = "ECHO";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -1682,7 +1682,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A7SEG0";
+		SIGNAL = "MEDIDA";
 		INDEX = 3;
 		FORMAT = T;
 		SCALE = 1;
@@ -1690,7 +1690,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A7SEG0[6]";
+		SIGNAL = "MEDIDA[15]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -1698,7 +1698,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A7SEG0[5]";
+		SIGNAL = "MEDIDA[14]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -1706,7 +1706,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A7SEG0[4]";
+		SIGNAL = "MEDIDA[13]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -1714,7 +1714,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A7SEG0[3]";
+		SIGNAL = "MEDIDA[12]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -1722,7 +1722,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A7SEG0[2]";
+		SIGNAL = "MEDIDA[11]";
 		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
@@ -1730,7 +1730,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A7SEG0[1]";
+		SIGNAL = "MEDIDA[10]";
 		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
@@ -1738,7 +1738,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A7SEG0[0]";
+		SIGNAL = "MEDIDA[9]";
 		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
@@ -1746,264 +1746,8 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A7SEG1";
-		INDEX = 11;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG1[6]";
-		INDEX = 12;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG1[5]";
-		INDEX = 13;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG1[4]";
-		INDEX = 14;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG1[3]";
-		INDEX = 15;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG1[2]";
-		INDEX = 16;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG1[1]";
-		INDEX = 17;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG1[0]";
-		INDEX = 18;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG2";
-		INDEX = 19;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG2[6]";
-		INDEX = 20;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG2[5]";
-		INDEX = 21;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG2[4]";
-		INDEX = 22;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG2[3]";
-		INDEX = 23;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG2[2]";
-		INDEX = 24;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG2[1]";
-		INDEX = 25;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG2[0]";
-		INDEX = 26;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG3";
-		INDEX = 27;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG3[6]";
-		INDEX = 28;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG3[5]";
-		INDEX = 29;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG3[4]";
-		INDEX = 30;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG3[3]";
-		INDEX = 31;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG3[2]";
-		INDEX = 32;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG3[1]";
-		INDEX = 33;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "A7SEG3[0]";
-		INDEX = 34;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "MEDIDA";
-		INDEX = 35;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "MEDIDA[15]";
-		INDEX = 36;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "MEDIDA[14]";
-		INDEX = 37;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "MEDIDA[13]";
-		INDEX = 38;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "MEDIDA[12]";
-		INDEX = 39;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "MEDIDA[11]";
-		INDEX = 40;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "MEDIDA[10]";
-		INDEX = 41;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "MEDIDA[9]";
-		INDEX = 42;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "MEDIDA[8]";
-		INDEX = 43;
+		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2011,7 +1755,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 	}
 	LINE{
 		SIGNAL = "MEDIDA[7]";
-		INDEX = 44;
+		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2019,7 +1763,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 	}
 	LINE{
 		SIGNAL = "MEDIDA[6]";
-		INDEX = 45;
+		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2027,7 +1771,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 	}
 	LINE{
 		SIGNAL = "MEDIDA[5]";
-		INDEX = 46;
+		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2035,7 +1779,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 	}
 	LINE{
 		SIGNAL = "MEDIDA[4]";
-		INDEX = 47;
+		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2043,7 +1787,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 	}
 	LINE{
 		SIGNAL = "MEDIDA[3]";
-		INDEX = 48;
+		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2051,7 +1795,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 	}
 	LINE{
 		SIGNAL = "MEDIDA[2]";
-		INDEX = 49;
+		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2059,7 +1803,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 	}
 	LINE{
 		SIGNAL = "MEDIDA[1]";
-		INDEX = 50;
+		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2067,6 +1811,262 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 	}
 	LINE{
 		SIGNAL = "MEDIDA[0]";
+		INDEX = 19;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIR";
+		INDEX = 20;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "PRONTO";
+		INDEX = 21;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "RESET";
+		INDEX = 22;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "TRIGGER";
+		INDEX = 23;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "CLK2_OUT";
+		INDEX = 24;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MODO_ATUAL";
+		INDEX = 25;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "UC_DEBUG_ESTADO";
+		INDEX = 26;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "UC_DEBUG_ESTADO[2]";
+		INDEX = 27;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "UC_DEBUG_ESTADO[1]";
+		INDEX = 28;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "UC_DEBUG_ESTADO[0]";
+		INDEX = 29;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0";
+		INDEX = 30;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[6]";
+		INDEX = 31;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[5]";
+		INDEX = 32;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[4]";
+		INDEX = 33;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[3]";
+		INDEX = 34;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[2]";
+		INDEX = 35;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[1]";
+		INDEX = 36;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[0]";
+		INDEX = 37;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1";
+		INDEX = 38;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[6]";
+		INDEX = 39;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[5]";
+		INDEX = 40;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[4]";
+		INDEX = 41;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[3]";
+		INDEX = 42;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[2]";
+		INDEX = 43;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[1]";
+		INDEX = 44;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[0]";
+		INDEX = 45;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2";
+		INDEX = 46;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[6]";
+		INDEX = 47;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[5]";
+		INDEX = 48;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[4]";
+		INDEX = 49;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[3]";
+		INDEX = 50;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[2]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -2074,7 +2074,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SAIDA_SERIAL";
+		SIGNAL = "A7SEG2[1]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -2082,7 +2082,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "FD_DEBUG_SERIAL0";
+		SIGNAL = "A7SEG2[0]";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -2090,15 +2090,15 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "FD_DEBUG_SERIAL1";
+		SIGNAL = "A7SEG3";
 		INDEX = 54;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "FD_DEBUG_SERIAL2";
+		SIGNAL = "A7SEG3[6]";
 		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
@@ -2106,7 +2106,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "FD_DEBUG_SERIAL3";
+		SIGNAL = "A7SEG3[5]";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -2114,15 +2114,15 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "FD_DEBUG_MODE";
+		SIGNAL = "A7SEG3[4]";
 		INDEX = 57;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "FD_DEBUG_MODE[1]";
+		SIGNAL = "A7SEG3[3]";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -2130,7 +2130,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "FD_DEBUG_MODE[0]";
+		SIGNAL = "A7SEG3[2]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -2138,7 +2138,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IMPRIME";
+		SIGNAL = "A7SEG3[1]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -2146,15 +2146,15 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA";
+		SIGNAL = "A7SEG3[0]";
 		INDEX = 61;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[43]";
+		SIGNAL = "SERIAL";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -2162,15 +2162,15 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[42]";
+		SIGNAL = "serial_DEBUG_IDATA";
 		INDEX = 63;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[41]";
+		SIGNAL = "serial_DEBUG_IDATA[43]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -2178,7 +2178,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[40]";
+		SIGNAL = "serial_DEBUG_IDATA[42]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -2186,7 +2186,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[39]";
+		SIGNAL = "serial_DEBUG_IDATA[41]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -2194,7 +2194,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[38]";
+		SIGNAL = "serial_DEBUG_IDATA[40]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
@@ -2202,7 +2202,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[37]";
+		SIGNAL = "serial_DEBUG_IDATA[39]";
 		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
@@ -2210,7 +2210,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[36]";
+		SIGNAL = "serial_DEBUG_IDATA[38]";
 		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
@@ -2218,7 +2218,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[35]";
+		SIGNAL = "serial_DEBUG_IDATA[37]";
 		INDEX = 70;
 		FORMAT = E;
 		SCALE = 1;
@@ -2226,7 +2226,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[34]";
+		SIGNAL = "serial_DEBUG_IDATA[36]";
 		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
@@ -2234,7 +2234,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[33]";
+		SIGNAL = "serial_DEBUG_IDATA[35]";
 		INDEX = 72;
 		FORMAT = E;
 		SCALE = 1;
@@ -2242,7 +2242,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[32]";
+		SIGNAL = "serial_DEBUG_IDATA[34]";
 		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
@@ -2250,7 +2250,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[31]";
+		SIGNAL = "serial_DEBUG_IDATA[33]";
 		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
@@ -2258,7 +2258,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[30]";
+		SIGNAL = "serial_DEBUG_IDATA[32]";
 		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
@@ -2266,7 +2266,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[29]";
+		SIGNAL = "serial_DEBUG_IDATA[31]";
 		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
@@ -2274,7 +2274,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[28]";
+		SIGNAL = "serial_DEBUG_IDATA[30]";
 		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
@@ -2282,7 +2282,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[27]";
+		SIGNAL = "serial_DEBUG_IDATA[29]";
 		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
@@ -2290,7 +2290,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[26]";
+		SIGNAL = "serial_DEBUG_IDATA[28]";
 		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
@@ -2298,7 +2298,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[25]";
+		SIGNAL = "serial_DEBUG_IDATA[27]";
 		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
@@ -2306,7 +2306,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[24]";
+		SIGNAL = "serial_DEBUG_IDATA[26]";
 		INDEX = 81;
 		FORMAT = E;
 		SCALE = 1;
@@ -2314,7 +2314,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[23]";
+		SIGNAL = "serial_DEBUG_IDATA[25]";
 		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
@@ -2322,7 +2322,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[22]";
+		SIGNAL = "serial_DEBUG_IDATA[24]";
 		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
@@ -2330,7 +2330,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[21]";
+		SIGNAL = "serial_DEBUG_IDATA[23]";
 		INDEX = 84;
 		FORMAT = E;
 		SCALE = 1;
@@ -2338,7 +2338,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[20]";
+		SIGNAL = "serial_DEBUG_IDATA[22]";
 		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
@@ -2346,7 +2346,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[19]";
+		SIGNAL = "serial_DEBUG_IDATA[21]";
 		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
@@ -2354,7 +2354,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[18]";
+		SIGNAL = "serial_DEBUG_IDATA[20]";
 		INDEX = 87;
 		FORMAT = E;
 		SCALE = 1;
@@ -2362,7 +2362,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[17]";
+		SIGNAL = "serial_DEBUG_IDATA[19]";
 		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
@@ -2370,7 +2370,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[16]";
+		SIGNAL = "serial_DEBUG_IDATA[18]";
 		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
@@ -2378,7 +2378,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[15]";
+		SIGNAL = "serial_DEBUG_IDATA[17]";
 		INDEX = 90;
 		FORMAT = E;
 		SCALE = 1;
@@ -2386,7 +2386,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[14]";
+		SIGNAL = "serial_DEBUG_IDATA[16]";
 		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
@@ -2394,7 +2394,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[13]";
+		SIGNAL = "serial_DEBUG_IDATA[15]";
 		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
@@ -2402,7 +2402,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[12]";
+		SIGNAL = "serial_DEBUG_IDATA[14]";
 		INDEX = 93;
 		FORMAT = E;
 		SCALE = 1;
@@ -2410,7 +2410,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[11]";
+		SIGNAL = "serial_DEBUG_IDATA[13]";
 		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
@@ -2418,7 +2418,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[10]";
+		SIGNAL = "serial_DEBUG_IDATA[12]";
 		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
@@ -2426,7 +2426,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[9]";
+		SIGNAL = "serial_DEBUG_IDATA[11]";
 		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
@@ -2434,7 +2434,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[8]";
+		SIGNAL = "serial_DEBUG_IDATA[10]";
 		INDEX = 97;
 		FORMAT = E;
 		SCALE = 1;
@@ -2442,7 +2442,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[7]";
+		SIGNAL = "serial_DEBUG_IDATA[9]";
 		INDEX = 98;
 		FORMAT = E;
 		SCALE = 1;
@@ -2450,7 +2450,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[6]";
+		SIGNAL = "serial_DEBUG_IDATA[8]";
 		INDEX = 99;
 		FORMAT = E;
 		SCALE = 1;
@@ -2458,7 +2458,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[5]";
+		SIGNAL = "serial_DEBUG_IDATA[7]";
 		INDEX = 100;
 		FORMAT = E;
 		SCALE = 1;
@@ -2466,7 +2466,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[4]";
+		SIGNAL = "serial_DEBUG_IDATA[6]";
 		INDEX = 101;
 		FORMAT = E;
 		SCALE = 1;
@@ -2474,7 +2474,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[3]";
+		SIGNAL = "serial_DEBUG_IDATA[5]";
 		INDEX = 102;
 		FORMAT = E;
 		SCALE = 1;
@@ -2482,7 +2482,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[2]";
+		SIGNAL = "serial_DEBUG_IDATA[4]";
 		INDEX = 103;
 		FORMAT = E;
 		SCALE = 1;
@@ -2490,7 +2490,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[1]";
+		SIGNAL = "serial_DEBUG_IDATA[3]";
 		INDEX = 104;
 		FORMAT = E;
 		SCALE = 1;
@@ -2498,7 +2498,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "serial_DEBUG_IDATA[0]";
+		SIGNAL = "serial_DEBUG_IDATA[2]";
 		INDEX = 105;
 		FORMAT = E;
 		SCALE = 1;
@@ -2506,7 +2506,7 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "FD_DEBUG_sel";
+		SIGNAL = "serial_DEBUG_IDATA[1]";
 		INDEX = 106;
 		FORMAT = E;
 		SCALE = 1;
@@ -2514,8 +2514,1307 @@ VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "altera_reserved_tdo";
+		SIGNAL = "serial_DEBUG_IDATA[0]";
 		INDEX = 107;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_MODE";
+		INDEX = 108;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_MODE[1]";
+		INDEX = 109;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_MODE[0]";
+		INDEX = 110;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_SERIAL0";
+		INDEX = 111;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD0";
+		INDEX = 112;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD0[3]";
+		INDEX = 113;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD0[2]";
+		INDEX = 114;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD0[1]";
+		INDEX = 115;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD0[0]";
+		INDEX = 116;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD1";
+		INDEX = 117;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD1[3]";
+		INDEX = 118;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD1[2]";
+		INDEX = 119;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD1[1]";
+		INDEX = 120;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD1[0]";
+		INDEX = 121;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD2";
+		INDEX = 122;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD2[3]";
+		INDEX = 123;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD2[2]";
+		INDEX = 124;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD2[1]";
+		INDEX = 125;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD2[0]";
+		INDEX = 126;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD3";
+		INDEX = 127;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD3[3]";
+		INDEX = 128;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD3[2]";
+		INDEX = 129;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD3[1]";
+		INDEX = 130;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD3[0]";
+		INDEX = 131;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "altera_reserved_tdo";
+		INDEX = 132;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "SD_IMPRIMA";
+		INDEX = 133;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+}
+
+VECTOR("C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3635] Laboratório Digital I/TrenaDigital/db/SD_sensor_de_distancia.sim.cvwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 500000000;
+		NUMERATOR = 1162;
+		DENOMINATOR = 500000000;
+		TOP_INDEX = 0;
+	}
+	CLOCK{
+		PERIOD = 10000;
+		OFFSET = 0;
+		DUTY_CYCLE = 50;
+	}
+	RANDOM_VALUE{
+		INTERVAL_TYPE = HALF_GRID;
+	}
+	LINE{
+		SIGNAL = "CLK";
+		INDEX = 0;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "LIGA";
+		INDEX = 1;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ECHO";
+		INDEX = 2;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA";
+		INDEX = 3;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[15]";
+		INDEX = 4;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[14]";
+		INDEX = 5;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[13]";
+		INDEX = 6;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[12]";
+		INDEX = 7;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[11]";
+		INDEX = 8;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[10]";
+		INDEX = 9;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[9]";
+		INDEX = 10;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[8]";
+		INDEX = 11;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[7]";
+		INDEX = 12;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[6]";
+		INDEX = 13;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[5]";
+		INDEX = 14;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[4]";
+		INDEX = 15;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[3]";
+		INDEX = 16;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[2]";
+		INDEX = 17;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[1]";
+		INDEX = 18;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIDA[0]";
+		INDEX = 19;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MEDIR";
+		INDEX = 20;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "PRONTO";
+		INDEX = 21;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "RESET";
+		INDEX = 22;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "TRIGGER";
+		INDEX = 23;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "CLK2_OUT";
+		INDEX = 24;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MODO_ATUAL";
+		INDEX = 25;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "UC_DEBUG_ESTADO";
+		INDEX = 26;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "UC_DEBUG_ESTADO[2]";
+		INDEX = 27;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "UC_DEBUG_ESTADO[1]";
+		INDEX = 28;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "UC_DEBUG_ESTADO[0]";
+		INDEX = 29;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0";
+		INDEX = 30;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[6]";
+		INDEX = 31;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[5]";
+		INDEX = 32;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[4]";
+		INDEX = 33;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[3]";
+		INDEX = 34;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[2]";
+		INDEX = 35;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[1]";
+		INDEX = 36;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG0[0]";
+		INDEX = 37;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1";
+		INDEX = 38;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[6]";
+		INDEX = 39;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[5]";
+		INDEX = 40;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[4]";
+		INDEX = 41;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[3]";
+		INDEX = 42;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[2]";
+		INDEX = 43;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[1]";
+		INDEX = 44;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG1[0]";
+		INDEX = 45;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2";
+		INDEX = 46;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[6]";
+		INDEX = 47;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[5]";
+		INDEX = 48;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[4]";
+		INDEX = 49;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[3]";
+		INDEX = 50;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[2]";
+		INDEX = 51;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[1]";
+		INDEX = 52;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG2[0]";
+		INDEX = 53;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG3";
+		INDEX = 54;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG3[6]";
+		INDEX = 55;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG3[5]";
+		INDEX = 56;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG3[4]";
+		INDEX = 57;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG3[3]";
+		INDEX = 58;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG3[2]";
+		INDEX = 59;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG3[1]";
+		INDEX = 60;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A7SEG3[0]";
+		INDEX = 61;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "SERIAL";
+		INDEX = 62;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA";
+		INDEX = 63;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[43]";
+		INDEX = 64;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[42]";
+		INDEX = 65;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[41]";
+		INDEX = 66;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[40]";
+		INDEX = 67;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[39]";
+		INDEX = 68;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[38]";
+		INDEX = 69;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[37]";
+		INDEX = 70;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[36]";
+		INDEX = 71;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[35]";
+		INDEX = 72;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[34]";
+		INDEX = 73;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[33]";
+		INDEX = 74;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[32]";
+		INDEX = 75;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[31]";
+		INDEX = 76;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[30]";
+		INDEX = 77;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[29]";
+		INDEX = 78;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[28]";
+		INDEX = 79;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[27]";
+		INDEX = 80;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[26]";
+		INDEX = 81;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[25]";
+		INDEX = 82;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[24]";
+		INDEX = 83;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[23]";
+		INDEX = 84;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[22]";
+		INDEX = 85;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[21]";
+		INDEX = 86;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[20]";
+		INDEX = 87;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[19]";
+		INDEX = 88;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[18]";
+		INDEX = 89;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[17]";
+		INDEX = 90;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[16]";
+		INDEX = 91;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[15]";
+		INDEX = 92;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[14]";
+		INDEX = 93;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[13]";
+		INDEX = 94;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[12]";
+		INDEX = 95;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[11]";
+		INDEX = 96;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[10]";
+		INDEX = 97;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[9]";
+		INDEX = 98;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[8]";
+		INDEX = 99;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[7]";
+		INDEX = 100;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[6]";
+		INDEX = 101;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[5]";
+		INDEX = 102;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[4]";
+		INDEX = 103;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[3]";
+		INDEX = 104;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[2]";
+		INDEX = 105;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[1]";
+		INDEX = 106;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "serial_DEBUG_IDATA[0]";
+		INDEX = 107;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_MODE";
+		INDEX = 108;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_MODE[1]";
+		INDEX = 109;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_MODE[0]";
+		INDEX = 110;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_SERIAL0";
+		INDEX = 111;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD0";
+		INDEX = 112;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD0[3]";
+		INDEX = 113;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD0[2]";
+		INDEX = 114;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD0[1]";
+		INDEX = 115;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD0[0]";
+		INDEX = 116;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD1";
+		INDEX = 117;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD1[3]";
+		INDEX = 118;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD1[2]";
+		INDEX = 119;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD1[1]";
+		INDEX = 120;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD1[0]";
+		INDEX = 121;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD2";
+		INDEX = 122;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD2[3]";
+		INDEX = 123;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD2[2]";
+		INDEX = 124;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD2[1]";
+		INDEX = 125;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD2[0]";
+		INDEX = 126;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD3";
+		INDEX = 127;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD3[3]";
+		INDEX = 128;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD3[2]";
+		INDEX = 129;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD3[1]";
+		INDEX = 130;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FD_DEBUG_BCD3[0]";
+		INDEX = 131;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "altera_reserved_tdo";
+		INDEX = 132;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "SD_IMPRIMA";
+		INDEX = 133;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

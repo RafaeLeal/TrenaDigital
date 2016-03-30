@@ -3952,7 +3952,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-contador:CONT
+FD_sensor_de_distancia:FLUXO_DE_DADOS|contador:CONT
 }
 # lmf
 |altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -3995,70 +3995,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-divisor:DIVI
-}
-# lmf
-|altera|91sp2|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-binary_bcd
-# storage
-db|SD_sensor_de_distancia.(43).cnf
-db|SD_sensor_de_distancia.(43).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-binary_bcd.vhd
-f2ff86c3364b37836c1eec5423de5238
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
-n
-16
-PARAMETER_SIGNED_DEC
-USR
- constraint(binary_in)
-15 downto 0
-PARAMETER_STRING
-USR
- constraint(bcd0)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(bcd1)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(bcd2)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(bcd3)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(bcd4)
-3 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-binary_bcd:BIN_TO_BCD
+FD_sensor_de_distancia:FLUXO_DE_DADOS|divisor:DIVI
 }
 # lmf
 |altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -4101,10 +4038,10 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-hex7seg_en:SEG0
-hex7seg_en:SEG1
-hex7seg_en:SEG2
-hex7seg_en:SEG3
+FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG0
+FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG1
+FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG2
+FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG3
 }
 # lmf
 |altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -4171,8 +4108,8 @@ a36c8ec425c8a2589af98b2d4daabc3
 # entity
 serial
 # storage
-db|SD_sensor_de_distancia.(39).cnf
-db|SD_sensor_de_distancia.(39).cnf
+db|SD_sensor_de_distancia.(45).cnf
+db|SD_sensor_de_distancia.(45).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -4180,7 +4117,7 @@ ON
 # case_insensitive
 # source_file
 serial.vhd
-f40ba3eddd9a289178322eac6948719
+7c4a2c3cee94fe4e40967ee835bb423d
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -4192,8 +4129,34 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
+# user_parameter {
+ constraint(din0)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(din1)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(din2)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(din3)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(mode)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(serial_debug_idata)
+43 downto 0
+PARAMETER_STRING
+USR
+}
 # hierarchies {
-serial:SERIE
+FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE
 }
 # lmf
 |altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -4202,7 +4165,70 @@ a36c8ec425c8a2589af98b2d4daabc3
 
 # end
 # entity
-FD_sensor_de_distancia
+binary_bcd
+# storage
+db|SD_sensor_de_distancia.(43).cnf
+db|SD_sensor_de_distancia.(43).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+binary_bcd.vhd
+c7781dd8dce0558c5368583f693216
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+USR
+ constraint(binary_in)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd0)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd1)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd2)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd3)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd4)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+SD_sensor_de_distancia
 # storage
 db|SD_sensor_de_distancia.(0).cnf
 db|SD_sensor_de_distancia.(0).cnf
@@ -4212,8 +4238,8 @@ ON
 }
 # case_insensitive
 # source_file
-fd_sensor_de_distancia.vhd
-cdd0a547764b102e3391202475fce81e
+sd_sensor_de_distancia.vhd
+678961882f6adb6e15ed6b20d47ec27e
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -4227,6 +4253,124 @@ ON
 }
 # hierarchies {
 |
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+UC_sensor_de_distancia
+# storage
+db|SD_sensor_de_distancia.(46).cnf
+db|SD_sensor_de_distancia.(46).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+uc_sensor_de_distancia.vhd
+9ce7f1e7d2d291b8213241c62c4ddbb2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(debug_estado)
+2 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UC_sensor_de_distancia:UNIDADE_DE_CONTROLE
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+FD_sensor_de_distancia
+# storage
+db|SD_sensor_de_distancia.(39).cnf
+db|SD_sensor_de_distancia.(39).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fd_sensor_de_distancia.vhd
+95c1c519fca5a686a544055e5392932
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(medida)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(a7seg3)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(a7seg2)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(a7seg1)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(a7seg0)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(fd_debug_mode)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(serial_debug_idata)
+43 downto 0
+PARAMETER_STRING
+USR
+ constraint(fd_debug_bcd0)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(fd_debug_bcd1)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(fd_debug_bcd2)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(fd_debug_bcd3)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+FD_sensor_de_distancia:FLUXO_DE_DADOS
 }
 # lmf
 |altera|91sp2|quartus|lmf|maxplus2.lmf

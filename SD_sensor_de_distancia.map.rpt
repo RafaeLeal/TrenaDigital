@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SD_sensor_de_distancia
-Tue Mar 29 23:20:14 2016
+Wed Mar 30 01:52:04 2016
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -14,31 +14,32 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. State Machine - |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|state
- 10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Inverted Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body
- 16. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst
- 17. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_fms3:auto_generated
- 18. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter
- 19. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter
- 20. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter
- 21. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter
- 22. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_rom_sr:crc_rom_sr
- 23. Source assignments for sld_hub:auto_hub
- 24. Source assignments for sld_hub:auto_hub|sld_rom_sr:hub_info_reg
- 25. Parameter Settings for User Entity Instance: binary_bcd:BIN_TO_BCD
- 26. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 27. Parameter Settings for Inferred Entity Instance: sld_hub:auto_hub
- 28. Port Connectivity Checks: "serial:SERIE"
- 29. Port Connectivity Checks: "binary_bcd:BIN_TO_BCD"
- 30. Port Connectivity Checks: "contador:CONT"
- 31. SignalTap II Logic Analyzer Settings
- 32. Connections to In-System Debugging Instance "auto_signaltap_0"
- 33. Analysis & Synthesis Messages
+  9. State Machine - |SD_sensor_de_distancia|UC_sensor_de_distancia:UNIDADE_DE_CONTROLE|estado
+ 10. State Machine - |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD|state
+ 11. Registers Removed During Synthesis
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Inverted Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body
+ 17. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst
+ 18. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_fms3:auto_generated
+ 19. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter
+ 20. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter
+ 21. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter
+ 22. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter
+ 23. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_rom_sr:crc_rom_sr
+ 24. Source assignments for sld_hub:auto_hub
+ 25. Source assignments for sld_hub:auto_hub|sld_rom_sr:hub_info_reg
+ 26. Parameter Settings for User Entity Instance: FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD
+ 27. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 28. Parameter Settings for Inferred Entity Instance: sld_hub:auto_hub
+ 29. Port Connectivity Checks: "FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE"
+ 30. Port Connectivity Checks: "FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD"
+ 31. Port Connectivity Checks: "FD_sensor_de_distancia:FLUXO_DE_DADOS|contador:CONT"
+ 32. SignalTap II Logic Analyzer Settings
+ 33. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 34. Analysis & Synthesis Messages
 
 
 
@@ -64,16 +65,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 29 23:20:14 2016        ;
+; Analysis & Synthesis Status        ; Successful - Wed Mar 30 01:52:04 2016        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; SD_sensor_de_distancia                       ;
-; Top-level Entity Name              ; FD_sensor_de_distancia                       ;
+; Top-level Entity Name              ; SD_sensor_de_distancia                       ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 742                                          ;
-;     Total combinational functions  ; 532                                          ;
-;     Dedicated logic registers      ; 518                                          ;
-; Total registers                    ; 518                                          ;
-; Total pins                         ; 100                                          ;
+; Total logic elements               ; 783                                          ;
+;     Total combinational functions  ; 575                                          ;
+;     Dedicated logic registers      ; 536                                          ;
+; Total registers                    ; 536                                          ;
+; Total pins                         ; 122                                          ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 512                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -87,7 +88,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting                ; Default Value          ;
 +----------------------------------------------------------------------------+------------------------+------------------------+
 ; Device                                                                     ; EP2C35F672C6           ;                        ;
-; Top-level entity name                                                      ; FD_sensor_de_distancia ; SD_sensor_de_distancia ;
+; Top-level entity name                                                      ; SD_sensor_de_distancia ; SD_sensor_de_distancia ;
 ; Family name                                                                ; Cyclone II             ; Stratix II             ;
 ; Use Generated Physical Constraints File                                    ; Off                    ;                        ;
 ; Use smart compilation                                                      ; Off                    ; Off                    ;
@@ -176,8 +177,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                               ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; SD_sensor_de_distancia.vhd       ; yes             ; User VHDL File               ; C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3635] Laboratório Digital I/TrenaDigital/SD_sensor_de_distancia.vhd ;
 ; contador.vhd                     ; yes             ; User VHDL File               ; C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3635] Laboratório Digital I/TrenaDigital/contador.vhd               ;
 ; FD_sensor_de_distancia.vhd       ; yes             ; User VHDL File               ; C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3635] Laboratório Digital I/TrenaDigital/FD_sensor_de_distancia.vhd ;
+; UC_sensor_de_distancia.vhd       ; yes             ; User VHDL File               ; C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3635] Laboratório Digital I/TrenaDigital/UC_sensor_de_distancia.vhd ;
 ; divisor.vhd                      ; yes             ; User VHDL File               ; C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3635] Laboratório Digital I/TrenaDigital/divisor.vhd                ;
 ; hex7seg_en.vhd                   ; yes             ; User VHDL File               ; C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3635] Laboratório Digital I/TrenaDigital/hex7seg_en.vhd             ;
 ; binary_bcd.vhd                   ; yes             ; User VHDL File               ; C:/Users/Rafael Leal/Google Drive/POLI/[3o Ano] 1 Módulo Acadêmico/[PCS3635] Laboratório Digital I/TrenaDigital/binary_bcd.vhd             ;
@@ -212,28 +215,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 742   ;
+; Estimated Total logic elements              ; 783   ;
 ;                                             ;       ;
-; Total combinational functions               ; 532   ;
+; Total combinational functions               ; 575   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 212   ;
-;     -- 3 input functions                    ; 152   ;
-;     -- <=2 input functions                  ; 168   ;
+;     -- 4 input functions                    ; 222   ;
+;     -- 3 input functions                    ; 163   ;
+;     -- <=2 input functions                  ; 190   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 457   ;
-;     -- arithmetic mode                      ; 75    ;
+;     -- normal mode                          ; 484   ;
+;     -- arithmetic mode                      ; 91    ;
 ;                                             ;       ;
-; Total registers                             ; 518   ;
-;     -- Dedicated logic registers            ; 518   ;
+; Total registers                             ; 536   ;
+;     -- Dedicated logic registers            ; 536   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 100   ;
+; I/O pins                                    ; 122   ;
 ; Total memory bits                           ; 512   ;
 ; Maximum fan-out node                        ; CLK   ;
-; Maximum fan-out                             ; 324   ;
-; Total fan-out                               ; 3436  ;
-; Average fan-out                             ; 2.96  ;
+; Maximum fan-out                             ; 343   ;
+; Total fan-out                               ; 3623  ;
+; Average fan-out                             ; 2.92  ;
 +---------------------------------------------+-------+
 
 
@@ -242,51 +245,53 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                  ; Library Name ;
 +------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |FD_sensor_de_distancia                                                                              ; 532 (1)           ; 518 (0)      ; 512         ; 0            ; 0       ; 0         ; 100  ; 0            ; |FD_sensor_de_distancia                                                                                                                                                                                                                                                                                              ; work         ;
-;    |binary_bcd:BIN_TO_BCD|                                                                           ; 78 (78)           ; 56 (56)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD                                                                                                                                                                                                                                                                        ;              ;
-;    |contador:CONT|                                                                                   ; 29 (29)           ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|contador:CONT                                                                                                                                                                                                                                                                                ;              ;
-;    |divisor:DIVI|                                                                                    ; 20 (20)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|divisor:DIVI                                                                                                                                                                                                                                                                                 ;              ;
-;    |hex7seg_en:SEG0|                                                                                 ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|hex7seg_en:SEG0                                                                                                                                                                                                                                                                              ;              ;
-;    |hex7seg_en:SEG1|                                                                                 ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|hex7seg_en:SEG1                                                                                                                                                                                                                                                                              ;              ;
-;    |hex7seg_en:SEG2|                                                                                 ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|hex7seg_en:SEG2                                                                                                                                                                                                                                                                              ;              ;
-;    |hex7seg_en:SEG3|                                                                                 ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|hex7seg_en:SEG3                                                                                                                                                                                                                                                                              ;              ;
-;    |serial:SERIE|                                                                                    ; 49 (49)           ; 104 (104)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|serial:SERIE                                                                                                                                                                                                                                                                                 ;              ;
-;    |sld_hub:auto_hub|                                                                                ; 103 (64)          ; 73 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_hub:auto_hub                                                                                                                                                                                                                                                                             ;              ;
-;       |sld_rom_sr:hub_info_reg|                                                                      ; 22 (22)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_hub:auto_hub|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                     ;              ;
-;       |sld_shadow_jsm:shadow_jsm|                                                                    ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                                   ;              ;
-;    |sld_signaltap:auto_signaltap_0|                                                                  ; 196 (1)           ; 238 (0)      ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                               ;              ;
-;       |sld_signaltap_impl:sld_signaltap_body|                                                        ; 195 (20)          ; 238 (47)     ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body                                                                                                                                                                                                                         ;              ;
-;          |altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|                            ; 17 (0)            ; 46 (46)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem                                                                                                                                                          ;              ;
-;             |lpm_decode:wdecoder|                                                                    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder                                                                                                                                      ;              ;
-;                |decode_rqf:auto_generated|                                                           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder|decode_rqf:auto_generated                                                                                                            ;              ;
-;             |lpm_mux:mux|                                                                            ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux                                                                                                                                              ;              ;
-;                |mux_aoc:auto_generated|                                                              ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux|mux_aoc:auto_generated                                                                                                                       ;              ;
-;          |altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|                                           ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram                                                                                                                                                                         ;              ;
-;             |altsyncram_fms3:auto_generated|                                                         ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_fms3:auto_generated                                                                                                                                          ;              ;
-;          |lpm_shiftreg:segment_offset_config_deserialize|                                            ; 0 (0)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|lpm_shiftreg:segment_offset_config_deserialize                                                                                                                                                                          ;              ;
-;          |lpm_shiftreg:status_register|                                                              ; 17 (17)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|lpm_shiftreg:status_register                                                                                                                                                                                            ;              ;
-;          |sld_buffer_manager:sld_buffer_manager_inst|                                                ; 59 (59)           ; 44 (44)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst                                                                                                                                                                              ;              ;
-;          |sld_ela_control:ela_control|                                                               ; 4 (1)             ; 21 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control                                                                                                                                                                                             ;              ;
-;             |lpm_shiftreg:trigger_config_deserialize|                                                ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|lpm_shiftreg:trigger_config_deserialize                                                                                                                                                     ;              ;
-;             |sld_ela_basic_multi_level_trigger:\basic_multi_level_mbpm_trigger_gen:multi_level_mbpm| ; 2 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_basic_multi_level_trigger:\basic_multi_level_mbpm_trigger_gen:multi_level_mbpm                                                                                                      ;              ;
-;                |lpm_shiftreg:trigger_condition_deserialize|                                          ; 0 (0)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_basic_multi_level_trigger:\basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|lpm_shiftreg:trigger_condition_deserialize                                                           ;              ;
-;                |sld_mbpmg:\trigger_modules_gen:0:trigger_match|                                      ; 2 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_basic_multi_level_trigger:\basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|sld_mbpmg:\trigger_modules_gen:0:trigger_match                                                       ;              ;
-;                   |sld_sbpmg:\gen_sbpmg_pipeline_less_than_two:sm0:0:sm1|                            ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_basic_multi_level_trigger:\basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|sld_mbpmg:\trigger_modules_gen:0:trigger_match|sld_sbpmg:\gen_sbpmg_pipeline_less_than_two:sm0:0:sm1 ;              ;
-;             |sld_ela_trigger_flow_mgr:\builtin:ela_trigger_flow_mgr_entity|                          ; 1 (1)             ; 11 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger_flow_mgr:\builtin:ela_trigger_flow_mgr_entity                                                                                                                               ;              ;
-;                |lpm_shiftreg:trigger_config_deserialize|                                             ; 0 (0)             ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger_flow_mgr:\builtin:ela_trigger_flow_mgr_entity|lpm_shiftreg:trigger_config_deserialize                                                                                       ;              ;
-;          |sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|          ; 60 (8)            ; 48 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst                                                                                                                                        ;              ;
-;             |lpm_counter:\adv_point_3_and_more:advance_pointer_counter|                              ; 2 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter                                                                              ;              ;
-;                |cntr_8ai:auto_generated|                                                             ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter|cntr_8ai:auto_generated                                                      ;              ;
-;             |lpm_counter:read_pointer_counter|                                                       ; 7 (0)             ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:read_pointer_counter                                                                                                       ;              ;
-;                |cntr_02j:auto_generated|                                                             ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:read_pointer_counter|cntr_02j:auto_generated                                                                               ;              ;
-;             |lpm_counter:status_advance_pointer_counter|                                             ; 6 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_advance_pointer_counter                                                                                             ;              ;
-;                |cntr_sbi:auto_generated|                                                             ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_advance_pointer_counter|cntr_sbi:auto_generated                                                                     ;              ;
-;             |lpm_counter:status_read_pointer_counter|                                                ; 3 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_read_pointer_counter                                                                                                ;              ;
-;                |cntr_gui:auto_generated|                                                             ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_read_pointer_counter|cntr_gui:auto_generated                                                                        ;              ;
-;             |lpm_shiftreg:info_data_shift_out|                                                       ; 15 (15)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:info_data_shift_out                                                                                                       ;              ;
-;             |lpm_shiftreg:ram_data_shift_out|                                                        ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:ram_data_shift_out                                                                                                        ;              ;
-;             |lpm_shiftreg:status_data_shift_out|                                                     ; 15 (15)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:status_data_shift_out                                                                                                     ;              ;
-;          |sld_rom_sr:crc_rom_sr|                                                                     ; 18 (18)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_rom_sr:crc_rom_sr                                                                                                                                                                                                   ;              ;
+; |SD_sensor_de_distancia                                                                              ; 575 (1)           ; 536 (0)      ; 512         ; 0            ; 0       ; 0         ; 122  ; 0            ; |SD_sensor_de_distancia                                                                                                                                                                                                                                                                                              ; work         ;
+;    |FD_sensor_de_distancia:FLUXO_DE_DADOS|                                                           ; 229 (0)           ; 201 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS                                                                                                                                                                                                                                                        ;              ;
+;       |binary_bcd:BIN_TO_BCD|                                                                        ; 78 (78)           ; 56 (56)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD                                                                                                                                                                                                                                  ;              ;
+;       |contador:CONT|                                                                                ; 29 (29)           ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|contador:CONT                                                                                                                                                                                                                                          ;              ;
+;       |divisor:DIVI|                                                                                 ; 20 (20)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|divisor:DIVI                                                                                                                                                                                                                                           ;              ;
+;       |hex7seg_en:SEG0|                                                                              ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG0                                                                                                                                                                                                                                        ;              ;
+;       |hex7seg_en:SEG1|                                                                              ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG1                                                                                                                                                                                                                                        ;              ;
+;       |hex7seg_en:SEG2|                                                                              ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG2                                                                                                                                                                                                                                        ;              ;
+;       |hex7seg_en:SEG3|                                                                              ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG3                                                                                                                                                                                                                                        ;              ;
+;       |serial:SERIE|                                                                                 ; 46 (46)           ; 98 (98)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE                                                                                                                                                                                                                                           ;              ;
+;    |UC_sensor_de_distancia:UNIDADE_DE_CONTROLE|                                                      ; 46 (46)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|UC_sensor_de_distancia:UNIDADE_DE_CONTROLE                                                                                                                                                                                                                                                   ;              ;
+;    |sld_hub:auto_hub|                                                                                ; 103 (64)          ; 73 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_hub:auto_hub                                                                                                                                                                                                                                                                             ;              ;
+;       |sld_rom_sr:hub_info_reg|                                                                      ; 22 (22)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_hub:auto_hub|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                     ;              ;
+;       |sld_shadow_jsm:shadow_jsm|                                                                    ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                                   ;              ;
+;    |sld_signaltap:auto_signaltap_0|                                                                  ; 196 (1)           ; 238 (0)      ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                               ;              ;
+;       |sld_signaltap_impl:sld_signaltap_body|                                                        ; 195 (20)          ; 238 (47)     ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body                                                                                                                                                                                                                         ;              ;
+;          |altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|                            ; 17 (0)            ; 46 (46)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem                                                                                                                                                          ;              ;
+;             |lpm_decode:wdecoder|                                                                    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder                                                                                                                                      ;              ;
+;                |decode_rqf:auto_generated|                                                           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder|decode_rqf:auto_generated                                                                                                            ;              ;
+;             |lpm_mux:mux|                                                                            ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux                                                                                                                                              ;              ;
+;                |mux_aoc:auto_generated|                                                              ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux|mux_aoc:auto_generated                                                                                                                       ;              ;
+;          |altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|                                           ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram                                                                                                                                                                         ;              ;
+;             |altsyncram_fms3:auto_generated|                                                         ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_fms3:auto_generated                                                                                                                                          ;              ;
+;          |lpm_shiftreg:segment_offset_config_deserialize|                                            ; 0 (0)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|lpm_shiftreg:segment_offset_config_deserialize                                                                                                                                                                          ;              ;
+;          |lpm_shiftreg:status_register|                                                              ; 17 (17)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|lpm_shiftreg:status_register                                                                                                                                                                                            ;              ;
+;          |sld_buffer_manager:sld_buffer_manager_inst|                                                ; 59 (59)           ; 44 (44)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst                                                                                                                                                                              ;              ;
+;          |sld_ela_control:ela_control|                                                               ; 4 (1)             ; 21 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control                                                                                                                                                                                             ;              ;
+;             |lpm_shiftreg:trigger_config_deserialize|                                                ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|lpm_shiftreg:trigger_config_deserialize                                                                                                                                                     ;              ;
+;             |sld_ela_basic_multi_level_trigger:\basic_multi_level_mbpm_trigger_gen:multi_level_mbpm| ; 2 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_basic_multi_level_trigger:\basic_multi_level_mbpm_trigger_gen:multi_level_mbpm                                                                                                      ;              ;
+;                |lpm_shiftreg:trigger_condition_deserialize|                                          ; 0 (0)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_basic_multi_level_trigger:\basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|lpm_shiftreg:trigger_condition_deserialize                                                           ;              ;
+;                |sld_mbpmg:\trigger_modules_gen:0:trigger_match|                                      ; 2 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_basic_multi_level_trigger:\basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|sld_mbpmg:\trigger_modules_gen:0:trigger_match                                                       ;              ;
+;                   |sld_sbpmg:\gen_sbpmg_pipeline_less_than_two:sm0:0:sm1|                            ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_basic_multi_level_trigger:\basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|sld_mbpmg:\trigger_modules_gen:0:trigger_match|sld_sbpmg:\gen_sbpmg_pipeline_less_than_two:sm0:0:sm1 ;              ;
+;             |sld_ela_trigger_flow_mgr:\builtin:ela_trigger_flow_mgr_entity|                          ; 1 (1)             ; 11 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger_flow_mgr:\builtin:ela_trigger_flow_mgr_entity                                                                                                                               ;              ;
+;                |lpm_shiftreg:trigger_config_deserialize|                                             ; 0 (0)             ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger_flow_mgr:\builtin:ela_trigger_flow_mgr_entity|lpm_shiftreg:trigger_config_deserialize                                                                                       ;              ;
+;          |sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|          ; 60 (8)            ; 48 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst                                                                                                                                        ;              ;
+;             |lpm_counter:\adv_point_3_and_more:advance_pointer_counter|                              ; 2 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter                                                                              ;              ;
+;                |cntr_8ai:auto_generated|                                                             ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter|cntr_8ai:auto_generated                                                      ;              ;
+;             |lpm_counter:read_pointer_counter|                                                       ; 7 (0)             ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:read_pointer_counter                                                                                                       ;              ;
+;                |cntr_02j:auto_generated|                                                             ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:read_pointer_counter|cntr_02j:auto_generated                                                                               ;              ;
+;             |lpm_counter:status_advance_pointer_counter|                                             ; 6 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_advance_pointer_counter                                                                                             ;              ;
+;                |cntr_sbi:auto_generated|                                                             ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_advance_pointer_counter|cntr_sbi:auto_generated                                                                     ;              ;
+;             |lpm_counter:status_read_pointer_counter|                                                ; 3 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_read_pointer_counter                                                                                                ;              ;
+;                |cntr_gui:auto_generated|                                                             ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_read_pointer_counter|cntr_gui:auto_generated                                                                        ;              ;
+;             |lpm_shiftreg:info_data_shift_out|                                                       ; 15 (15)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:info_data_shift_out                                                                                                       ;              ;
+;             |lpm_shiftreg:ram_data_shift_out|                                                        ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:ram_data_shift_out                                                                                                        ;              ;
+;             |lpm_shiftreg:status_data_shift_out|                                                     ; 15 (15)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:status_data_shift_out                                                                                                     ;              ;
+;          |sld_rom_sr:crc_rom_sr|                                                                     ; 18 (18)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SD_sensor_de_distancia|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_rom_sr:crc_rom_sr                                                                                                                                                                                                   ;              ;
 +------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -301,47 +306,68 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------+
-; State Machine - |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|state ;
-+-------------+------------+-------------+----------------------------+
-; Name        ; state.done ; state.shift ; state.start                ;
-+-------------+------------+-------------+----------------------------+
-; state.start ; 0          ; 0           ; 0                          ;
-; state.shift ; 0          ; 1           ; 1                          ;
-; state.done  ; 1          ; 0           ; 1                          ;
-+-------------+------------+-------------+----------------------------+
++-------------------------------------------------------------------------------------------+
+; State Machine - |SD_sensor_de_distancia|UC_sensor_de_distancia:UNIDADE_DE_CONTROLE|estado ;
++-----------+-----------+-----------+-----------+-----------+-----------+-------------------+
+; Name      ; estado.s5 ; estado.s4 ; estado.s3 ; estado.s2 ; estado.s1 ; estado.s0         ;
++-----------+-----------+-----------+-----------+-----------+-----------+-------------------+
+; estado.s0 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0                 ;
+; estado.s1 ; 0         ; 0         ; 0         ; 0         ; 1         ; 1                 ;
+; estado.s2 ; 0         ; 0         ; 0         ; 1         ; 0         ; 1                 ;
+; estado.s3 ; 0         ; 0         ; 1         ; 0         ; 0         ; 1                 ;
+; estado.s4 ; 0         ; 1         ; 0         ; 0         ; 0         ; 1                 ;
+; estado.s5 ; 1         ; 0         ; 0         ; 0         ; 0         ; 1                 ;
++-----------+-----------+-----------+-----------+-----------+-----------+-------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; divisor:DIVI|RESP[12..15]              ; Stuck at GND due to stuck port data_in ;
-; contador:CONT|MEDIDA[15]               ; Stuck at GND due to stuck port data_in ;
-; divisor:DIVI|RESP[10..11]              ; Stuck at GND due to stuck port data_in ;
-; serial:SERIE|IDATA0[8..10]             ; Stuck at GND due to stuck port data_in ;
-; serial:SERIE|IDATA0[0,6..7]            ; Stuck at VCC due to stuck port data_in ;
-; serial:SERIE|IDATA1[8..10]             ; Stuck at GND due to stuck port data_in ;
-; serial:SERIE|IDATA1[0,6..7]            ; Stuck at VCC due to stuck port data_in ;
-; serial:SERIE|IDATA2[8..10]             ; Stuck at GND due to stuck port data_in ;
-; serial:SERIE|IDATA2[0,6..7]            ; Stuck at VCC due to stuck port data_in ;
-; serial:SERIE|IDATA3[8..10]             ; Stuck at GND due to stuck port data_in ;
-; serial:SERIE|IDATA3[7]                 ; Stuck at VCC due to stuck port data_in ;
-; serial:SERIE|IDATA3[4..6]              ; Stuck at GND due to stuck port data_in ;
-; serial:SERIE|IDATA3[0..3]              ; Stuck at VCC due to stuck port data_in ;
-; Total Number of Removed Registers = 36 ;                                        ;
-+----------------------------------------+----------------------------------------+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------+
+; State Machine - |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD|state ;
++-------------+------------+-------------+------------------------------------------------------------------+
+; Name        ; state.done ; state.shift ; state.start                                                      ;
++-------------+------------+-------------+------------------------------------------------------------------+
+; state.start ; 0          ; 0           ; 0                                                                ;
+; state.shift ; 0          ; 1           ; 1                                                                ;
+; state.done  ; 1          ; 0           ; 1                                                                ;
++-------------+------------+-------------+------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                   ;
-+--------------------------+---------------------------+----------------------------------------+
-; Register name            ; Reason for Removal        ; Registers Removed due to This Register ;
-+--------------------------+---------------------------+----------------------------------------+
-; contador:CONT|MEDIDA[15] ; Stuck at GND              ; divisor:DIVI|RESP[10]                  ;
-;                          ; due to stuck port data_in ;                                        ;
-+--------------------------+---------------------------+----------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                              ;
++--------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+; Register name                                                            ; Reason for Removal                                                                   ;
++--------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|divisor:DIVI|RESP[12..15]          ; Stuck at GND due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|contador:CONT|MEDIDA[15]           ; Stuck at GND due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|divisor:DIVI|RESP[10..11]          ; Stuck at GND due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA0[8..10]         ; Stuck at GND due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA0[0,6..7]        ; Stuck at VCC due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA1[8..10]         ; Stuck at GND due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA1[0,6..7]        ; Stuck at VCC due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA2[8..10]         ; Stuck at GND due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA2[0,6..7]        ; Stuck at VCC due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA3[8..10]         ; Stuck at GND due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA3[7]             ; Stuck at VCC due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA3[4..6]          ; Stuck at GND due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA3[0..3]          ; Stuck at VCC due to stuck port data_in                                               ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA[0]              ; Merged with FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA[1]              ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|serial_DEBUG_IDATA[0] ; Merged with FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|serial_DEBUG_IDATA[1] ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA[1]              ; Merged with FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA[2]              ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|serial_DEBUG_IDATA[1] ; Merged with FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|serial_DEBUG_IDATA[2] ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA[2]              ; Merged with FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|IDATA[3]              ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|serial_DEBUG_IDATA[2] ; Merged with FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|serial_DEBUG_IDATA[3] ;
+; Total Number of Removed Registers = 42                                   ;                                                                                      ;
++--------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                              ;
++----------------------------------------------------------------+---------------------------+-------------------------------------------------------------+
+; Register name                                                  ; Reason for Removal        ; Registers Removed due to This Register                      ;
++----------------------------------------------------------------+---------------------------+-------------------------------------------------------------+
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|contador:CONT|MEDIDA[15] ; Stuck at GND              ; FD_sensor_de_distancia:FLUXO_DE_DADOS|divisor:DIVI|RESP[10] ;
+;                                                                ; due to stuck port data_in ;                                                             ;
++----------------------------------------------------------------+---------------------------+-------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -349,12 +375,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 518   ;
-; Number of registers using Synchronous Clear  ; 19    ;
+; Total registers                              ; 536   ;
+; Number of registers using Synchronous Clear  ; 28    ;
 ; Number of registers using Synchronous Load   ; 16    ;
-; Number of registers using Asynchronous Clear ; 270   ;
+; Number of registers using Asynchronous Clear ; 267   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 305   ;
+; Number of registers using Clock Enable       ; 311   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -364,7 +390,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                      ; Fan out ;
 +----------------------------------------------------------------------------------------------------------------------------------------+---------+
-; serial:SERIE|SDOUT                                                                                                                     ; 2       ;
+; FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE|SDOUT                                                                               ; 2       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[1] ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[2] ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[3] ; 1       ;
@@ -378,18 +404,20 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |FD_sensor_de_distancia|contador:CONT|cont[0]           ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|binary[6] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|bcds_next ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|bcds_next ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|bcds_next ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|bcds_next ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |SD_sensor_de_distancia|UC_sensor_de_distancia:UNIDADE_DE_CONTROLE|DELAY[8]                   ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|contador:CONT|cont[0]           ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD|binary[7] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD|bcds_next ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD|bcds_next ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD|bcds_next ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD|bcds_next ;
+; 7:1                ; 6 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |SD_sensor_de_distancia|UC_sensor_de_distancia:UNIDADE_DE_CONTROLE|estado                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------+
@@ -502,13 +530,13 @@ Encoding Type:  One-Hot
 +----------------------+-------+------+---------------------------+
 
 
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: binary_bcd:BIN_TO_BCD ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; n              ; 16    ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -589,7 +617,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "serial:SERIE"                                                                             ;
+; Port Connectivity Checks: "FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE"                                       ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                             ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -608,16 +636,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "binary_bcd:BIN_TO_BCD"                                                              ;
+; Port Connectivity Checks: "FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD"                        ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; bcd4 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rdy  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador:CONT"                                                                                                 ;
+; Port Connectivity Checks: "FD_sensor_de_distancia:FLUXO_DE_DADOS|contador:CONT"                                                           ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                                                  ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -634,18 +663,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                         ;
-+---------+--------------+-----------+----------------+-------------------+-------------------+------------------------------------------------------------------------------------------+
-; Name    ; Type         ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection ; Details                                                                                  ;
-+---------+--------------+-----------+----------------+-------------------+-------------------+------------------------------------------------------------------------------------------+
-; CLK     ; post-fitting ; connected ; Top            ; post-synthesis    ; CLK               ; N/A                                                                                      ;
-; ECHO    ; post-fitting ; connected ; Top            ; post-synthesis    ; ECHO              ; N/A                                                                                      ;
-; MEDIR   ; post-fitting ; missing   ; Top            ; post-synthesis    ; GND               ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; RESET   ; post-fitting ; connected ; Top            ; post-synthesis    ; RESET             ; N/A                                                                                      ;
-; TRIGGER ; post-fitting ; missing   ; Top            ; post-synthesis    ; GND               ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; TRIGGER ; post-fitting ; missing   ; Top            ; post-synthesis    ; GND               ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-+---------+--------------+-----------+----------------+-------------------+-------------------+------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                           ;
++---------+--------------+-----------+----------------+-------------------+------------------------------------------------------+---------+
+; Name    ; Type         ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                    ; Details ;
++---------+--------------+-----------+----------------+-------------------+------------------------------------------------------+---------+
+; CLK     ; post-fitting ; connected ; Top            ; post-synthesis    ; CLK                                                  ; N/A     ;
+; ECHO    ; post-fitting ; connected ; Top            ; post-synthesis    ; ECHO                                                 ; N/A     ;
+; MEDIR   ; post-fitting ; connected ; Top            ; post-synthesis    ; MEDIR                                                ; N/A     ;
+; RESET   ; post-fitting ; connected ; Top            ; post-synthesis    ; RESET                                                ; N/A     ;
+; TRIGGER ; post-fitting ; connected ; Top            ; post-synthesis    ; UC_sensor_de_distancia:UNIDADE_DE_CONTROLE|estado.s1 ; N/A     ;
+; TRIGGER ; post-fitting ; connected ; Top            ; post-synthesis    ; UC_sensor_de_distancia:UNIDADE_DE_CONTROLE|estado.s1 ; N/A     ;
++---------+--------------+-----------+----------------+-------------------+------------------------------------------------------+---------+
 
 
 +-------------------------------+
@@ -654,7 +683,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Mar 29 23:20:11 2016
+    Info: Processing started: Wed Mar 30 01:52:01 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SD_sensor_de_distancia -c SD_sensor_de_distancia
 Info: Found 2 design units, including 1 entities, in source file sd_sensor_de_distancia.vhd
     Info: Found design unit 1: SD_sensor_de_distancia-arch_SD_sensor_de_distancia
@@ -683,25 +712,26 @@ Info: Found 2 design units, including 1 entities, in source file serial.vhd
 Info: Found 2 design units, including 1 entities, in source file mymux.vhd
     Info: Found design unit 1: MyMUX-Behavioral
     Info: Found entity 1: MyMUX
-Info: Elaborating entity "FD_sensor_de_distancia" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at FD_sensor_de_distancia.vhd(22): used implicit default value for signal "FD_DEBUG_sel" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(79): object "BCD4" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(80): object "ASCII0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(82): object "DONE" assigned a value but never read
-Warning (10540): VHDL Signal Declaration warning at FD_sensor_de_distancia.vhd(86): used explicit default value for signal "SERIAL1" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at FD_sensor_de_distancia.vhd(86): used explicit default value for signal "SERIAL2" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at FD_sensor_de_distancia.vhd(86): used explicit default value for signal "SERIAL3" because signal was never assigned a value
-Info: Elaborating entity "contador" for hierarchy "contador:CONT"
-Info: Elaborating entity "divisor" for hierarchy "divisor:DIVI"
+Info: Elaborating entity "SD_sensor_de_distancia" for the top level hierarchy
+Info: Elaborating entity "FD_sensor_de_distancia" for hierarchy "FD_sensor_de_distancia:FLUXO_DE_DADOS"
+Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(80): object "BCD4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(81): object "ASCII3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(83): object "DONE" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(87): object "SERIAL_RDY" assigned a value but never read
+Info: Elaborating entity "contador" for hierarchy "FD_sensor_de_distancia:FLUXO_DE_DADOS|contador:CONT"
+Info: Elaborating entity "divisor" for hierarchy "FD_sensor_de_distancia:FLUXO_DE_DADOS|divisor:DIVI"
 Warning (10542): VHDL Variable Declaration warning at divisor.vhd(20): used initial value expression for variable "zero6" because variable was never assigned a value
 Warning (10542): VHDL Variable Declaration warning at divisor.vhd(21): used initial value expression for variable "zero10" because variable was never assigned a value
 Warning (10542): VHDL Variable Declaration warning at divisor.vhd(22): used initial value expression for variable "zero11" because variable was never assigned a value
-Info: Elaborating entity "binary_bcd" for hierarchy "binary_bcd:BIN_TO_BCD"
-Info: Elaborating entity "serial" for hierarchy "serial:SERIE"
+Info: Elaborating entity "binary_bcd" for hierarchy "FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD"
+Warning (10631): VHDL Process Statement warning at binary_bcd.vhd(44): inferring latch(es) for signal or variable "rdy", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "rdy" at binary_bcd.vhd(44)
+Info: Elaborating entity "serial" for hierarchy "FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE"
 Warning (10036): Verilog HDL or VHDL warning at serial.vhd(31): object "PARIDADE" assigned a value but never read
 Warning (10540): VHDL Signal Declaration warning at serial.vhd(32): used explicit default value for signal "STARTBIT" because signal was never assigned a value
 Warning (10540): VHDL Signal Declaration warning at serial.vhd(33): used explicit default value for signal "STOPBIT" because signal was never assigned a value
-Info: Elaborating entity "hex7seg_en" for hierarchy "hex7seg_en:SEG0"
+Info: Elaborating entity "hex7seg_en" for hierarchy "FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG0"
+Info: Elaborating entity "UC_sensor_de_distancia" for hierarchy "UC_sensor_de_distancia:UNIDADE_DE_CONTROLE"
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_fms3.tdf
     Info: Found entity 1: altsyncram_fms3
 Info: Found 1 design units, including 1 entities, in source file db/mux_aoc.tdf
@@ -726,20 +756,18 @@ Info: Registers with preset signals will power-up high
 Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "MEDIDA[15]" is stuck at GND
-    Warning (13410): Pin "FD_DEBUG_SERIAL1" is stuck at GND
-    Warning (13410): Pin "FD_DEBUG_SERIAL2" is stuck at GND
-    Warning (13410): Pin "FD_DEBUG_SERIAL3" is stuck at GND
-    Warning (13410): Pin "FD_DEBUG_sel" is stuck at GND
-Critical Warning: Partially connected in-system debug instance "auto_signaltap_0" to 3 of its 6 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 3 missing sources or connections.
-Info: Implemented 864 device resources after synthesis - the final resource count might be different
-    Info: Implemented 7 input pins
-    Info: Implemented 97 output pins
-    Info: Implemented 755 logic cells
+Info: Succesfully connected in-system debug instance "auto_signaltap_0" to all 6 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Warning: Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLK2"
+Info: Implemented 926 device resources after synthesis - the final resource count might be different
+    Info: Implemented 9 input pins
+    Info: Implemented 117 output pins
+    Info: Implemented 795 logic cells
     Info: Implemented 4 RAM segments
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 21 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 16 warnings
     Info: Peak virtual memory: 284 megabytes
-    Info: Processing ended: Tue Mar 29 23:20:14 2016
+    Info: Processing ended: Wed Mar 30 01:52:04 2016
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Total CPU time (on all processors): 00:00:05
 
 

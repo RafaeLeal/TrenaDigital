@@ -1,5 +1,14 @@
 
-State Machine - |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|state
+State Machine - |SD_sensor_de_distancia|UC_sensor_de_distancia:UNIDADE_DE_CONTROLE|estado
+Name estado.s5 estado.s4 estado.s3 estado.s2 estado.s1 estado.s0 
+estado.s0 0 0 0 0 0 0 
+estado.s1 0 0 0 0 1 1 
+estado.s2 0 0 0 1 0 1 
+estado.s3 0 0 1 0 0 1 
+estado.s4 0 1 0 0 0 1 
+estado.s5 1 0 0 0 0 1 
+
+State Machine - |SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD|state
 Name state.done state.shift state.start 
 state.start 0 0 0 
 state.shift 0 1 1 

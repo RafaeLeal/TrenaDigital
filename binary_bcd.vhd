@@ -7,7 +7,8 @@ entity binary_bcd is
     port(
         clk, reset: in std_logic;
         binary_in: in std_logic_vector(N-1 downto 0);
-        bcd0, bcd1, bcd2, bcd3, bcd4: out std_logic_vector(3 downto 0)
+        bcd0, bcd1, bcd2, bcd3, bcd4: out std_logic_vector(3 downto 0);
+        rdy: out std_logic
     );
 end binary_bcd ;
  
@@ -54,13 +55,16 @@ begin
                 binary_next <= binary_in;
                 bcds_next <= (others => '0');
                 shift_counter_next <= 0;
+                rdy <= '0';
             when shift =>
                 if shift_counter = N then
                     state_next <= done;
+                    rdy <= '1';
                 else
                     binary_next <= binary(N-2 downto 0) & 'L';
                     bcds_next <= bcds_reg(18 downto 0) & binary(N-1);
                     shift_counter_next <= shift_counter + 1;
+                    rdy <= '0';
                 end if;
             when done =>
                 state_next <= start;

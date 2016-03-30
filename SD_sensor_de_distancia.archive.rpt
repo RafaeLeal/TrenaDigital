@@ -1,0 +1,92 @@
+Archive Project report for SD_sensor_de_distancia
+Wed Mar 30 01:56:40 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Wed Mar 30 01:56:40 2016 ;
+; Revision Name          ; SD_sensor_de_distancia                ;
+; Top-level Entity Name  ; SD_sensor_de_distancia                ;
+; Family                 ; Cyclone II                            ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'D:/TrenaDigital/SD_sensor_de_distancia.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'SD_sensor_de_distancia.archive.rpt'
+Info: Evaluation of Tcl script c:/altera/91sp2/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 174 megabytes
+    Info: Processing ended: Wed Mar 30 01:56:40 2016
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++------------------------------------+
+; Files Archived                     ;
++------------------------------------+
+; File Name                          ;
++------------------------------------+
+; assignment_defaults.qdf            ;
+; binary_bcd.vhd                     ;
+; contador.vhd                       ;
+; contador.vwf                       ;
+; db/SD_sensor_de_distancia.sim.cvwf ;
+; divisor.vhd                        ;
+; FD_sensor_de_distancia.vhd         ;
+; FD_sensor_de_distancia.vwf         ;
+; hex7seg_en.vhd                     ;
+; MyMUX.vhd                          ;
+; SD_sensor_de_distancia.dpf         ;
+; SD_sensor_de_distancia.qpf         ;
+; SD_sensor_de_distancia.qsf         ;
+; SD_sensor_de_distancia.vcd         ;
+; SD_sensor_de_distancia.vhd         ;
+; SD_sensor_de_distancia.vwf         ;
+; serial.vhd                         ;
+; serial.vwf                         ;
+; stp1.stp                           ;
+; UC_sensor_de_distancia.vhd         ;
++------------------------------------+
+
+

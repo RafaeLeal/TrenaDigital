@@ -15,12 +15,12 @@ ENTITY FD_sensor_de_distancia IS
 				A7SEG0 				: OUT STD_LOGIC_VECTOR(6 downto 0);
 				SAIDA_SERIAL 		: OUT STD_LOGIC;
 				FD_DEBUG_SERIAL0	: OUT STD_LOGIC;
-				FD_DEBUG_SERIAL1 	: OUT STD_LOGIC;
-				FD_DEBUG_SERIAL2 	: OUT STD_LOGIC;
-				FD_DEBUG_SERIAL3 	: OUT STD_LOGIC;
 				FD_DEBUG_MODE 		: OUT STD_LOGIC_VECTOR(1 downto 0);
-				FD_DEBUG_sel		: OUT STD_LOGIC;
-				serial_DEBUG_IDATA 	: OUT STD_LOGIC_VECTOR(43 downto 0)
+				serial_DEBUG_IDATA 	: OUT STD_LOGIC_VECTOR(43 downto 0);
+				FD_DEBUG_BCD0		: OUT STD_LOGIC_VECTOR(3 downto 0);
+				FD_DEBUG_BCD1		: OUT STD_LOGIC_VECTOR(3 downto 0);
+				FD_DEBUG_BCD2		: OUT STD_LOGIC_VECTOR(3 downto 0);
+				FD_DEBUG_BCD3		: OUT STD_LOGIC_VECTOR(3 downto 0)
 			);
 END ENTITY;
 ARCHITECTURE arch_FD_sensor_de_distancia OF FD_sensor_de_distancia IS
@@ -58,7 +58,8 @@ COMPONENT binary_bcd
     port(
         clk, reset: in std_logic;
         binary_in: in std_logic_vector(N-1 downto 0);
-        bcd0, bcd1, bcd2, bcd3, bcd4: out std_logic_vector(3 downto 0)
+        bcd0, bcd1, bcd2, bcd3, bcd4: out std_logic_vector(3 downto 0);
+        rdy: out std_logic
     );
 end COMPONENT;
 
@@ -79,18 +80,18 @@ end COMPONENT;
 	SIGNAL BCD0, BCD1, BCD2, BCD3, BCD4: STD_LOGIC_VECTOR(3 downto 0);
 	SIGNAL ASCII, ASCII0, ASCII1, ASCII2, ASCII3, ASCII4: STD_LOGIC_VECTOR(7 downto 0);
 	SIGNAL ASCII_HASHTAG: STD_LOGIC_VECTOR(7 downto 0);
-	SIGNAL DONE, DONE0, DONE1, DONE2, DONE3, DONE4: STD_LOGIC := '0';
+	SIGNAL DONE: STD_LOGIC := '0';
 	SIGNAL DONE_VECTOR: STD_LOGIC_VECTOR(3 downto 0) := "0000";
-	SIGNAL MODE, MODE0, MODE1, MODE2, MODE3, MODE4: STD_LOGIC_VECTOR(1 downto 0); 
-	SIGNAL sel : STD_LOGIC_VECTOR(1 downto 0) := "00"; 
-	SIGNAL SERIAL0, SERIAL1, SERIAL2, SERIAL3, SERIAL4: STD_LOGIC := '0';
-	SIGNAL LOADED : INTEGER := 0;
+	SIGNAL MODE: STD_LOGIC_VECTOR(1 downto 0); 
+	SIGNAL SERIAL0: STD_LOGIC := '0';
+	SIGNAL SERIAL_RDY : STD_LOGIC :='0';
 BEGIN
 	FD_DEBUG_MODE <= MODE;
 	FD_DEBUG_SERIAL0 <= SERIAL0;
-	FD_DEBUG_SERIAL1 <= SERIAL1;
-	FD_DEBUG_SERIAL2 <= SERIAL2;
-	FD_DEBUG_SERIAL3 <= SERIAL3;
+	FD_DEBUG_BCD0 <= BCD0;
+	FD_DEBUG_BCD1 <= BCD1;
+	FD_DEBUG_BCD2 <= BCD2;
+	FD_DEBUG_BCD3 <= BCD3;
 	CONT : contador PORT MAP 
 							(
 							CLK, RESET, ECHO,
@@ -109,7 +110,8 @@ BEGIN
 							PORT MAP (
 									CLK, RESET,
 									RESP,
-									BCD0, BCD1, BCD2, BCD3, BCD4
+									BCD0, BCD1, BCD2, BCD3, BCD4,
+									SERIAL_RDY
 									);
 	ASCII0 <= "0011"&BCD0;
 	ASCII1 <= "0011"&BCD1;
@@ -118,10 +120,11 @@ BEGIN
 	ASCII_HASHTAG <= "00100011";
 	SAIDA_SERIAL <= SERIAL0;
 	MODE <= IMPRIME & NOT IMPRIME;	
+	--MODE <= SERIAL_RDY & NOT SERIAL_RDY;
 	SERIE: serial PORT MAP(
-		ASCII1,
 		ASCII2,
-		ASCII3,
+		ASCII1,
+		ASCII0,
 		ASCII_HASHTAG,
 		MODE,
 		CLK, RESET,
@@ -130,7 +133,6 @@ BEGIN
 		serial_DEBUG_IDATA
 	);	
 
-	
 	SEG0: hex7seg_en PORT MAP(
 							BCD0, 		
 							PRONTO_cont,

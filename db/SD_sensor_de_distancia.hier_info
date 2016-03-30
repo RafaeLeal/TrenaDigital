@@ -1,4 +1,134 @@
-|FD_sensor_de_distancia
+|SD_sensor_de_distancia
+CLK => FD_sensor_de_distancia:FLUXO_DE_DADOS.CLK
+CLK => UC_sensor_de_distancia:UNIDADE_DE_CONTROLE.CLK
+CLK => CLK2_OUT.DATAIN
+CLK2 => ~NO_FANOUT~
+LIGA => MEDIR_LIGADO.IN0
+LIGA => MODO_ATUAL.DATAIN
+MEDIR => MEDIR_LIGADO.IN1
+ECHO => FD_sensor_de_distancia:FLUXO_DE_DADOS.ECHO
+ECHO => UC_sensor_de_distancia:UNIDADE_DE_CONTROLE.ECHO
+RESET => FD_sensor_de_distancia:FLUXO_DE_DADOS.RESET
+RESET => UC_sensor_de_distancia:UNIDADE_DE_CONTROLE.RESET
+MEDIDA[0] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[0]
+MEDIDA[1] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[1]
+MEDIDA[2] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[2]
+MEDIDA[3] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[3]
+MEDIDA[4] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[4]
+MEDIDA[5] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[5]
+MEDIDA[6] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[6]
+MEDIDA[7] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[7]
+MEDIDA[8] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[8]
+MEDIDA[9] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[9]
+MEDIDA[10] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[10]
+MEDIDA[11] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[11]
+MEDIDA[12] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[12]
+MEDIDA[13] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[13]
+MEDIDA[14] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[14]
+MEDIDA[15] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.MEDIDA[15]
+PRONTO <= UC_sensor_de_distancia:UNIDADE_DE_CONTROLE.PRONTO
+TRIGGER <= UC_sensor_de_distancia:UNIDADE_DE_CONTROLE.TRIGGER
+A7SEG3[0] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG3[0]
+A7SEG3[1] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG3[1]
+A7SEG3[2] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG3[2]
+A7SEG3[3] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG3[3]
+A7SEG3[4] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG3[4]
+A7SEG3[5] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG3[5]
+A7SEG3[6] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG3[6]
+A7SEG2[0] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG2[0]
+A7SEG2[1] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG2[1]
+A7SEG2[2] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG2[2]
+A7SEG2[3] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG2[3]
+A7SEG2[4] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG2[4]
+A7SEG2[5] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG2[5]
+A7SEG2[6] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG2[6]
+A7SEG1[0] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG1[0]
+A7SEG1[1] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG1[1]
+A7SEG1[2] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG1[2]
+A7SEG1[3] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG1[3]
+A7SEG1[4] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG1[4]
+A7SEG1[5] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG1[5]
+A7SEG1[6] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG1[6]
+A7SEG0[0] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG0[0]
+A7SEG0[1] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG0[1]
+A7SEG0[2] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG0[2]
+A7SEG0[3] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG0[3]
+A7SEG0[4] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG0[4]
+A7SEG0[5] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG0[5]
+A7SEG0[6] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.A7SEG0[6]
+SERIAL <= FD_sensor_de_distancia:FLUXO_DE_DADOS.SAIDA_SERIAL
+MODO_ATUAL <= LIGA.DB_MAX_OUTPUT_PORT_TYPE
+CLK2_OUT <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+UC_DEBUG_ESTADO[0] <= UC_sensor_de_distancia:UNIDADE_DE_CONTROLE.DEBUG_ESTADO[0]
+UC_DEBUG_ESTADO[1] <= UC_sensor_de_distancia:UNIDADE_DE_CONTROLE.DEBUG_ESTADO[1]
+UC_DEBUG_ESTADO[2] <= UC_sensor_de_distancia:UNIDADE_DE_CONTROLE.DEBUG_ESTADO[2]
+FD_DEBUG_SERIAL0 <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_SERIAL0
+FD_DEBUG_MODE[0] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_MODE[0]
+FD_DEBUG_MODE[1] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_MODE[1]
+serial_DEBUG_IDATA[0] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[0]
+serial_DEBUG_IDATA[1] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[1]
+serial_DEBUG_IDATA[2] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[2]
+serial_DEBUG_IDATA[3] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[3]
+serial_DEBUG_IDATA[4] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[4]
+serial_DEBUG_IDATA[5] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[5]
+serial_DEBUG_IDATA[6] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[6]
+serial_DEBUG_IDATA[7] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[7]
+serial_DEBUG_IDATA[8] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[8]
+serial_DEBUG_IDATA[9] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[9]
+serial_DEBUG_IDATA[10] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[10]
+serial_DEBUG_IDATA[11] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[11]
+serial_DEBUG_IDATA[12] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[12]
+serial_DEBUG_IDATA[13] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[13]
+serial_DEBUG_IDATA[14] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[14]
+serial_DEBUG_IDATA[15] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[15]
+serial_DEBUG_IDATA[16] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[16]
+serial_DEBUG_IDATA[17] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[17]
+serial_DEBUG_IDATA[18] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[18]
+serial_DEBUG_IDATA[19] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[19]
+serial_DEBUG_IDATA[20] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[20]
+serial_DEBUG_IDATA[21] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[21]
+serial_DEBUG_IDATA[22] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[22]
+serial_DEBUG_IDATA[23] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[23]
+serial_DEBUG_IDATA[24] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[24]
+serial_DEBUG_IDATA[25] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[25]
+serial_DEBUG_IDATA[26] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[26]
+serial_DEBUG_IDATA[27] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[27]
+serial_DEBUG_IDATA[28] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[28]
+serial_DEBUG_IDATA[29] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[29]
+serial_DEBUG_IDATA[30] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[30]
+serial_DEBUG_IDATA[31] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[31]
+serial_DEBUG_IDATA[32] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[32]
+serial_DEBUG_IDATA[33] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[33]
+serial_DEBUG_IDATA[34] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[34]
+serial_DEBUG_IDATA[35] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[35]
+serial_DEBUG_IDATA[36] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[36]
+serial_DEBUG_IDATA[37] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[37]
+serial_DEBUG_IDATA[38] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[38]
+serial_DEBUG_IDATA[39] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[39]
+serial_DEBUG_IDATA[40] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[40]
+serial_DEBUG_IDATA[41] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[41]
+serial_DEBUG_IDATA[42] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[42]
+serial_DEBUG_IDATA[43] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.serial_DEBUG_IDATA[43]
+FD_DEBUG_BCD0[0] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD0[0]
+FD_DEBUG_BCD0[1] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD0[1]
+FD_DEBUG_BCD0[2] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD0[2]
+FD_DEBUG_BCD0[3] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD0[3]
+FD_DEBUG_BCD1[0] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD1[0]
+FD_DEBUG_BCD1[1] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD1[1]
+FD_DEBUG_BCD1[2] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD1[2]
+FD_DEBUG_BCD1[3] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD1[3]
+FD_DEBUG_BCD2[0] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD2[0]
+FD_DEBUG_BCD2[1] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD2[1]
+FD_DEBUG_BCD2[2] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD2[2]
+FD_DEBUG_BCD2[3] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD2[3]
+FD_DEBUG_BCD3[0] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD3[0]
+FD_DEBUG_BCD3[1] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD3[1]
+FD_DEBUG_BCD3[2] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD3[2]
+FD_DEBUG_BCD3[3] <= FD_sensor_de_distancia:FLUXO_DE_DADOS.FD_DEBUG_BCD3[3]
+SD_IMPRIMA <= UC_sensor_de_distancia:UNIDADE_DE_CONTROLE.IMPRIMA
+
+
+|SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS
 CLK => contador:CONT.clk
 CLK => binary_bcd:BIN_TO_BCD.clk
 CLK => serial:SERIE.CLK
@@ -56,12 +186,8 @@ A7SEG0[5] <= hex7seg_en:SEG0.a_to_g[5]
 A7SEG0[6] <= hex7seg_en:SEG0.a_to_g[6]
 SAIDA_SERIAL <= serial:SERIE.SDOUT
 FD_DEBUG_SERIAL0 <= serial:SERIE.SDOUT
-FD_DEBUG_SERIAL1 <= <GND>
-FD_DEBUG_SERIAL2 <= <GND>
-FD_DEBUG_SERIAL3 <= <GND>
 FD_DEBUG_MODE[0] <= IMPRIME.DB_MAX_OUTPUT_PORT_TYPE
 FD_DEBUG_MODE[1] <= IMPRIME.DB_MAX_OUTPUT_PORT_TYPE
-FD_DEBUG_sel <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
 serial_DEBUG_IDATA[0] <= serial:SERIE.serial_DEBUG_IDATA[0]
 serial_DEBUG_IDATA[1] <= serial:SERIE.serial_DEBUG_IDATA[1]
 serial_DEBUG_IDATA[2] <= serial:SERIE.serial_DEBUG_IDATA[2]
@@ -106,9 +232,25 @@ serial_DEBUG_IDATA[40] <= serial:SERIE.serial_DEBUG_IDATA[40]
 serial_DEBUG_IDATA[41] <= serial:SERIE.serial_DEBUG_IDATA[41]
 serial_DEBUG_IDATA[42] <= serial:SERIE.serial_DEBUG_IDATA[42]
 serial_DEBUG_IDATA[43] <= serial:SERIE.serial_DEBUG_IDATA[43]
+FD_DEBUG_BCD0[0] <= binary_bcd:BIN_TO_BCD.bcd0[0]
+FD_DEBUG_BCD0[1] <= binary_bcd:BIN_TO_BCD.bcd0[1]
+FD_DEBUG_BCD0[2] <= binary_bcd:BIN_TO_BCD.bcd0[2]
+FD_DEBUG_BCD0[3] <= binary_bcd:BIN_TO_BCD.bcd0[3]
+FD_DEBUG_BCD1[0] <= binary_bcd:BIN_TO_BCD.bcd1[0]
+FD_DEBUG_BCD1[1] <= binary_bcd:BIN_TO_BCD.bcd1[1]
+FD_DEBUG_BCD1[2] <= binary_bcd:BIN_TO_BCD.bcd1[2]
+FD_DEBUG_BCD1[3] <= binary_bcd:BIN_TO_BCD.bcd1[3]
+FD_DEBUG_BCD2[0] <= binary_bcd:BIN_TO_BCD.bcd2[0]
+FD_DEBUG_BCD2[1] <= binary_bcd:BIN_TO_BCD.bcd2[1]
+FD_DEBUG_BCD2[2] <= binary_bcd:BIN_TO_BCD.bcd2[2]
+FD_DEBUG_BCD2[3] <= binary_bcd:BIN_TO_BCD.bcd2[3]
+FD_DEBUG_BCD3[0] <= binary_bcd:BIN_TO_BCD.bcd3[0]
+FD_DEBUG_BCD3[1] <= binary_bcd:BIN_TO_BCD.bcd3[1]
+FD_DEBUG_BCD3[2] <= binary_bcd:BIN_TO_BCD.bcd3[2]
+FD_DEBUG_BCD3[3] <= binary_bcd:BIN_TO_BCD.bcd3[3]
 
 
-|FD_sensor_de_distancia|contador:CONT
+|SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|contador:CONT
 clk => MEDIDA[0]~reg0.CLK
 clk => MEDIDA[1]~reg0.CLK
 clk => MEDIDA[2]~reg0.CLK
@@ -274,7 +416,7 @@ DEBUG_CONT[30] <= <GND>
 DEBUG_CONT[31] <= <GND>
 
 
-|FD_sensor_de_distancia|divisor:DIVI
+|SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|divisor:DIVI
 TEMPO[0] => ~NO_FANOUT~
 TEMPO[1] => ~NO_FANOUT~
 TEMPO[2] => ~NO_FANOUT~
@@ -336,7 +478,7 @@ RESP[14] <= RESP[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 RESP[15] <= RESP[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD
+|SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|binary_bcd:BIN_TO_BCD
 clk => shift_counter[0].CLK
 clk => shift_counter[1].CLK
 clk => shift_counter[2].CLK
@@ -461,22 +603,22 @@ reset => binary[13].ACLR
 reset => binary[14].ACLR
 reset => binary[15].ACLR
 reset => state~9.DATAIN
-binary_in[0] => Selector17.IN1
-binary_in[1] => Selector16.IN1
-binary_in[2] => Selector15.IN1
-binary_in[3] => Selector14.IN1
-binary_in[4] => Selector13.IN1
-binary_in[5] => Selector12.IN1
-binary_in[6] => Selector11.IN1
-binary_in[7] => Selector10.IN1
-binary_in[8] => Selector9.IN1
-binary_in[9] => Selector8.IN1
-binary_in[10] => Selector7.IN1
-binary_in[11] => Selector6.IN1
-binary_in[12] => Selector5.IN1
-binary_in[13] => Selector4.IN1
-binary_in[14] => Selector3.IN1
-binary_in[15] => Selector2.IN1
+binary_in[0] => Selector19.IN1
+binary_in[1] => Selector18.IN1
+binary_in[2] => Selector17.IN1
+binary_in[3] => Selector16.IN1
+binary_in[4] => Selector15.IN1
+binary_in[5] => Selector14.IN1
+binary_in[6] => Selector13.IN1
+binary_in[7] => Selector12.IN1
+binary_in[8] => Selector11.IN1
+binary_in[9] => Selector10.IN1
+binary_in[10] => Selector9.IN1
+binary_in[11] => Selector8.IN1
+binary_in[12] => Selector7.IN1
+binary_in[13] => Selector6.IN1
+binary_in[14] => Selector5.IN1
+binary_in[15] => Selector4.IN1
 bcd0[0] <= bcds_out_reg[0].DB_MAX_OUTPUT_PORT_TYPE
 bcd0[1] <= bcds_out_reg[1].DB_MAX_OUTPUT_PORT_TYPE
 bcd0[2] <= bcds_out_reg[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -497,9 +639,10 @@ bcd4[0] <= bcds_out_reg[16].DB_MAX_OUTPUT_PORT_TYPE
 bcd4[1] <= bcds_out_reg[17].DB_MAX_OUTPUT_PORT_TYPE
 bcd4[2] <= bcds_out_reg[18].DB_MAX_OUTPUT_PORT_TYPE
 bcd4[3] <= bcds_out_reg[19].DB_MAX_OUTPUT_PORT_TYPE
+rdy <= rdy$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FD_sensor_de_distancia|serial:SERIE
+|SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|serial:SERIE
 DIN0[0] => fparidade~6.IN1
 DIN0[0] => Mux8.IN0
 DIN0[1] => fparidade~5.IN1
@@ -1208,7 +1351,7 @@ serial_DEBUG_IDATA[42] <= serial_DEBUG_IDATA[42]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 serial_DEBUG_IDATA[43] <= serial_DEBUG_IDATA[43]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FD_sensor_de_distancia|hex7seg_en:SEG0
+|SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG0
 x[0] => Mux0.IN19
 x[0] => Mux1.IN19
 x[0] => Mux2.IN19
@@ -1253,7 +1396,7 @@ a_to_g[5] <= a_to_g~1.DB_MAX_OUTPUT_PORT_TYPE
 a_to_g[6] <= a_to_g~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FD_sensor_de_distancia|hex7seg_en:SEG1
+|SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG1
 x[0] => Mux0.IN19
 x[0] => Mux1.IN19
 x[0] => Mux2.IN19
@@ -1298,7 +1441,7 @@ a_to_g[5] <= a_to_g~1.DB_MAX_OUTPUT_PORT_TYPE
 a_to_g[6] <= a_to_g~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FD_sensor_de_distancia|hex7seg_en:SEG2
+|SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG2
 x[0] => Mux0.IN19
 x[0] => Mux1.IN19
 x[0] => Mux2.IN19
@@ -1343,7 +1486,7 @@ a_to_g[5] <= a_to_g~1.DB_MAX_OUTPUT_PORT_TYPE
 a_to_g[6] <= a_to_g~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FD_sensor_de_distancia|hex7seg_en:SEG3
+|SD_sensor_de_distancia|FD_sensor_de_distancia:FLUXO_DE_DADOS|hex7seg_en:SEG3
 x[0] => Mux0.IN19
 x[0] => Mux1.IN19
 x[0] => Mux2.IN19
@@ -1386,5 +1529,60 @@ a_to_g[3] <= a_to_g~3.DB_MAX_OUTPUT_PORT_TYPE
 a_to_g[4] <= a_to_g~2.DB_MAX_OUTPUT_PORT_TYPE
 a_to_g[5] <= a_to_g~1.DB_MAX_OUTPUT_PORT_TYPE
 a_to_g[6] <= a_to_g~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SD_sensor_de_distancia|UC_sensor_de_distancia:UNIDADE_DE_CONTROLE
+CLK => DELAY2[0].CLK
+CLK => DELAY2[1].CLK
+CLK => DELAY2[2].CLK
+CLK => DELAY2[3].CLK
+CLK => DELAY2[4].CLK
+CLK => DELAY2[5].CLK
+CLK => DELAY2[6].CLK
+CLK => DELAY2[7].CLK
+CLK => DELAY2[8].CLK
+CLK => DELAY[0].CLK
+CLK => DELAY[1].CLK
+CLK => DELAY[2].CLK
+CLK => DELAY[3].CLK
+CLK => DELAY[4].CLK
+CLK => DELAY[5].CLK
+CLK => DELAY[6].CLK
+CLK => DELAY[7].CLK
+CLK => DELAY[8].CLK
+CLK => estado~50.DATAIN
+MEDIR => process_0~0.IN0
+ECHO => process_0~2.IN0
+ECHO => process_0~3.IN0
+RESET => estado~30.OUTPUTSELECT
+RESET => estado~31.OUTPUTSELECT
+RESET => estado~32.OUTPUTSELECT
+RESET => estado~33.OUTPUTSELECT
+RESET => estado~34.OUTPUTSELECT
+RESET => estado~35.OUTPUTSELECT
+RESET => DELAY~9.OUTPUTSELECT
+RESET => DELAY~10.OUTPUTSELECT
+RESET => DELAY~11.OUTPUTSELECT
+RESET => DELAY~12.OUTPUTSELECT
+RESET => DELAY~13.OUTPUTSELECT
+RESET => DELAY~14.OUTPUTSELECT
+RESET => DELAY~15.OUTPUTSELECT
+RESET => DELAY~16.OUTPUTSELECT
+RESET => DELAY~17.OUTPUTSELECT
+RESET => DELAY2[5].ENA
+RESET => DELAY2[4].ENA
+RESET => DELAY2[3].ENA
+RESET => DELAY2[2].ENA
+RESET => DELAY2[1].ENA
+RESET => DELAY2[0].ENA
+RESET => DELAY2[6].ENA
+RESET => DELAY2[7].ENA
+RESET => DELAY2[8].ENA
+TRIGGER <= TRIGGER~0.DB_MAX_OUTPUT_PORT_TYPE
+PRONTO <= PRONTO~0.DB_MAX_OUTPUT_PORT_TYPE
+IMPRIMA <= IMPRIMA~0.DB_MAX_OUTPUT_PORT_TYPE
+DEBUG_ESTADO[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+DEBUG_ESTADO[1] <= DEBUG_ESTADO~1.DB_MAX_OUTPUT_PORT_TYPE
+DEBUG_ESTADO[2] <= DEBUG_ESTADO~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
