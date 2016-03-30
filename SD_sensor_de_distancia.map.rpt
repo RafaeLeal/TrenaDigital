@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SD_sensor_de_distancia
-Tue Mar 29 19:53:04 2016
+Tue Mar 29 23:20:14 2016
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -15,31 +15,30 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. State Machine - |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|state
- 10. User-Specified and Inferred Latches
- 11. Registers Removed During Synthesis
- 12. Removed Registers Triggering Further Register Optimizations
- 13. General Register Statistics
- 14. Inverted Register Statistics
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body
- 17. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst
- 18. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_fms3:auto_generated
- 19. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter
- 20. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter
- 21. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter
- 22. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter
- 23. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_rom_sr:crc_rom_sr
- 24. Source assignments for sld_hub:auto_hub
- 25. Source assignments for sld_hub:auto_hub|sld_rom_sr:hub_info_reg
- 26. Parameter Settings for User Entity Instance: binary_bcd:BIN_TO_BCD
- 27. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 28. Parameter Settings for Inferred Entity Instance: sld_hub:auto_hub
- 29. Port Connectivity Checks: "serial:SERIE"
- 30. Port Connectivity Checks: "binary_bcd:BIN_TO_BCD"
- 31. Port Connectivity Checks: "contador:CONT"
- 32. SignalTap II Logic Analyzer Settings
- 33. Connections to In-System Debugging Instance "auto_signaltap_0"
- 34. Analysis & Synthesis Messages
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body
+ 16. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst
+ 17. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_fms3:auto_generated
+ 18. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter
+ 19. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter
+ 20. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter
+ 21. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter
+ 22. Source assignments for sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_rom_sr:crc_rom_sr
+ 23. Source assignments for sld_hub:auto_hub
+ 24. Source assignments for sld_hub:auto_hub|sld_rom_sr:hub_info_reg
+ 25. Parameter Settings for User Entity Instance: binary_bcd:BIN_TO_BCD
+ 26. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 27. Parameter Settings for Inferred Entity Instance: sld_hub:auto_hub
+ 28. Port Connectivity Checks: "serial:SERIE"
+ 29. Port Connectivity Checks: "binary_bcd:BIN_TO_BCD"
+ 30. Port Connectivity Checks: "contador:CONT"
+ 31. SignalTap II Logic Analyzer Settings
+ 32. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 33. Analysis & Synthesis Messages
 
 
 
@@ -65,16 +64,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 29 19:53:04 2016        ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 29 23:20:14 2016        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; SD_sensor_de_distancia                       ;
 ; Top-level Entity Name              ; FD_sensor_de_distancia                       ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 683                                          ;
-;     Total combinational functions  ; 529                                          ;
-;     Dedicated logic registers      ; 442                                          ;
-; Total registers                    ; 442                                          ;
-; Total pins                         ; 55                                           ;
+; Total logic elements               ; 742                                          ;
+;     Total combinational functions  ; 532                                          ;
+;     Dedicated logic registers      ; 518                                          ;
+; Total registers                    ; 518                                          ;
+; Total pins                         ; 100                                          ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 512                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -213,28 +212,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 683   ;
+; Estimated Total logic elements              ; 742   ;
 ;                                             ;       ;
-; Total combinational functions               ; 529   ;
+; Total combinational functions               ; 532   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 218   ;
+;     -- 4 input functions                    ; 212   ;
 ;     -- 3 input functions                    ; 152   ;
-;     -- <=2 input functions                  ; 159   ;
+;     -- <=2 input functions                  ; 168   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 440   ;
-;     -- arithmetic mode                      ; 89    ;
+;     -- normal mode                          ; 457   ;
+;     -- arithmetic mode                      ; 75    ;
 ;                                             ;       ;
-; Total registers                             ; 442   ;
-;     -- Dedicated logic registers            ; 442   ;
+; Total registers                             ; 518   ;
+;     -- Dedicated logic registers            ; 518   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 55    ;
+; I/O pins                                    ; 100   ;
 ; Total memory bits                           ; 512   ;
 ; Maximum fan-out node                        ; CLK   ;
-; Maximum fan-out                             ; 250   ;
-; Total fan-out                               ; 3192  ;
-; Average fan-out                             ; 3.08  ;
+; Maximum fan-out                             ; 324   ;
+; Total fan-out                               ; 3436  ;
+; Average fan-out                             ; 2.96  ;
 +---------------------------------------------+-------+
 
 
@@ -243,7 +242,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                  ; Library Name ;
 +------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |FD_sensor_de_distancia                                                                              ; 529 (9)           ; 442 (0)      ; 512         ; 0            ; 0       ; 0         ; 55   ; 0            ; |FD_sensor_de_distancia                                                                                                                                                                                                                                                                                              ; work         ;
+; |FD_sensor_de_distancia                                                                              ; 532 (1)           ; 518 (0)      ; 512         ; 0            ; 0       ; 0         ; 100  ; 0            ; |FD_sensor_de_distancia                                                                                                                                                                                                                                                                                              ; work         ;
 ;    |binary_bcd:BIN_TO_BCD|                                                                           ; 78 (78)           ; 56 (56)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD                                                                                                                                                                                                                                                                        ;              ;
 ;    |contador:CONT|                                                                                   ; 29 (29)           ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|contador:CONT                                                                                                                                                                                                                                                                                ;              ;
 ;    |divisor:DIVI|                                                                                    ; 20 (20)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|divisor:DIVI                                                                                                                                                                                                                                                                                 ;              ;
@@ -251,7 +250,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |hex7seg_en:SEG1|                                                                                 ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|hex7seg_en:SEG1                                                                                                                                                                                                                                                                              ;              ;
 ;    |hex7seg_en:SEG2|                                                                                 ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|hex7seg_en:SEG2                                                                                                                                                                                                                                                                              ;              ;
 ;    |hex7seg_en:SEG3|                                                                                 ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|hex7seg_en:SEG3                                                                                                                                                                                                                                                                              ;              ;
-;    |serial:SERIE|                                                                                    ; 38 (38)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|serial:SERIE                                                                                                                                                                                                                                                                                 ;              ;
+;    |serial:SERIE|                                                                                    ; 49 (49)           ; 104 (104)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|serial:SERIE                                                                                                                                                                                                                                                                                 ;              ;
 ;    |sld_hub:auto_hub|                                                                                ; 103 (64)          ; 73 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_hub:auto_hub                                                                                                                                                                                                                                                                             ;              ;
 ;       |sld_rom_sr:hub_info_reg|                                                                      ; 22 (22)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_hub:auto_hub|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                     ;              ;
 ;       |sld_shadow_jsm:shadow_jsm|                                                                    ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FD_sensor_de_distancia|sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                                   ;              ;
@@ -313,22 +312,6 @@ Encoding Type:  One-Hot
 +-------------+------------+-------------+----------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; MODE[0]                                            ; GND                 ; yes                    ;
-; MODE[1]                                            ; GND                 ; yes                    ;
-; ASCII[3]                                           ; IMPRIME             ; yes                    ;
-; ASCII[2]                                           ; IMPRIME             ; yes                    ;
-; ASCII[1]                                           ; IMPRIME             ; yes                    ;
-; ASCII[0]                                           ; IMPRIME             ; yes                    ;
-; Number of user-specified and inferred latches = 6  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
 +---------------------------------------------------------------------------------+
 ; Registers Removed During Synthesis                                              ;
 +----------------------------------------+----------------------------------------+
@@ -337,8 +320,17 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; divisor:DIVI|RESP[12..15]              ; Stuck at GND due to stuck port data_in ;
 ; contador:CONT|MEDIDA[15]               ; Stuck at GND due to stuck port data_in ;
 ; divisor:DIVI|RESP[10..11]              ; Stuck at GND due to stuck port data_in ;
-; serial:SERIE|COUNT2[1..3]              ; Lost fanout                            ;
-; Total Number of Removed Registers = 10 ;                                        ;
+; serial:SERIE|IDATA0[8..10]             ; Stuck at GND due to stuck port data_in ;
+; serial:SERIE|IDATA0[0,6..7]            ; Stuck at VCC due to stuck port data_in ;
+; serial:SERIE|IDATA1[8..10]             ; Stuck at GND due to stuck port data_in ;
+; serial:SERIE|IDATA1[0,6..7]            ; Stuck at VCC due to stuck port data_in ;
+; serial:SERIE|IDATA2[8..10]             ; Stuck at GND due to stuck port data_in ;
+; serial:SERIE|IDATA2[0,6..7]            ; Stuck at VCC due to stuck port data_in ;
+; serial:SERIE|IDATA3[8..10]             ; Stuck at GND due to stuck port data_in ;
+; serial:SERIE|IDATA3[7]                 ; Stuck at VCC due to stuck port data_in ;
+; serial:SERIE|IDATA3[4..6]              ; Stuck at GND due to stuck port data_in ;
+; serial:SERIE|IDATA3[0..3]              ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 36 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
@@ -357,12 +349,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 442   ;
-; Number of registers using Synchronous Clear  ; 34    ;
+; Total registers                              ; 518   ;
+; Number of registers using Synchronous Clear  ; 19    ;
 ; Number of registers using Synchronous Load   ; 16    ;
-; Number of registers using Asynchronous Clear ; 236   ;
+; Number of registers using Asynchronous Clear ; 270   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 272   ;
+; Number of registers using Clock Enable       ; 305   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -372,7 +364,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                      ; Fan out ;
 +----------------------------------------------------------------------------------------------------------------------------------------+---------+
-; serial:SERIE|SDOUT                                                                                                                     ; 1       ;
+; serial:SERIE|SDOUT                                                                                                                     ; 2       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[1] ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[2] ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[3] ; 1       ;
@@ -391,10 +383,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |FD_sensor_de_distancia|serial:SERIE|COUNT[12]          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FD_sensor_de_distancia|serial:SERIE|IDATA[4]           ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |FD_sensor_de_distancia|contador:CONT|cont[5]           ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|binary[9] ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |FD_sensor_de_distancia|contador:CONT|cont[0]           ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|binary[6] ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|bcds_next ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|bcds_next ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |FD_sensor_de_distancia|binary_bcd:BIN_TO_BCD|bcds_next ;
@@ -598,15 +588,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "serial:SERIE"                                                                            ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; din[5..4] ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; din[7..6] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; done      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "serial:SERIE"                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; din0[5..4] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; din0[7..6] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; din1[5..4] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; din1[7..6] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; din2[5..4] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; din2[7..6] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; din3[1..0] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; din3[7..6] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; din3[4..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; din3[5]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; done       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -656,7 +654,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Mar 29 19:53:02 2016
+    Info: Processing started: Tue Mar 29 23:20:11 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SD_sensor_de_distancia -c SD_sensor_de_distancia
 Info: Found 2 design units, including 1 entities, in source file sd_sensor_de_distancia.vhd
     Info: Found design unit 1: SD_sensor_de_distancia-arch_SD_sensor_de_distancia
@@ -682,47 +680,17 @@ Info: Found 2 design units, including 1 entities, in source file binary_bcd.vhd
 Info: Found 2 design units, including 1 entities, in source file serial.vhd
     Info: Found design unit 1: serial-BEHAVIOR
     Info: Found entity 1: serial
+Info: Found 2 design units, including 1 entities, in source file mymux.vhd
+    Info: Found design unit 1: MyMUX-Behavioral
+    Info: Found entity 1: MyMUX
 Info: Elaborating entity "FD_sensor_de_distancia" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(73): object "BCD4" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(76): object "DONE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(76): object "DONE1" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(76): object "DONE2" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(76): object "DONE3" assigned a value but never read
-Warning (10540): VHDL Signal Declaration warning at FD_sensor_de_distancia.vhd(79): used explicit default value for signal "SERIAL1" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at FD_sensor_de_distancia.vhd(79): used explicit default value for signal "SERIAL2" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at FD_sensor_de_distancia.vhd(79): used explicit default value for signal "SERIAL3" because signal was never assigned a value
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(124): signal "IMPRIME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(125): signal "ASCII0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(128): signal "MODE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(131): signal "DONE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(131): signal "DONE_VECTOR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(135): signal "ASCII1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(137): signal "DONE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(137): signal "DONE_VECTOR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(141): signal "ASCII2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(143): signal "DONE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(143): signal "DONE_VECTOR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(147): signal "ASCII3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(149): signal "DONE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(149): signal "DONE_VECTOR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(153): signal "ASCII_HASHTAG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(122): inferring latch(es) for signal or variable "ASCII", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(122): inferring latch(es) for signal or variable "MODE", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at FD_sensor_de_distancia.vhd(122): inferring latch(es) for signal or variable "DONE_VECTOR", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "DONE_VECTOR[0]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "DONE_VECTOR[1]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "DONE_VECTOR[2]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "DONE_VECTOR[3]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "MODE[0]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "MODE[1]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "ASCII[0]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "ASCII[1]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "ASCII[2]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "ASCII[3]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "ASCII[4]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "ASCII[5]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "ASCII[6]" at FD_sensor_de_distancia.vhd(122)
-Info (10041): Inferred latch for "ASCII[7]" at FD_sensor_de_distancia.vhd(122)
+Warning (10541): VHDL Signal Declaration warning at FD_sensor_de_distancia.vhd(22): used implicit default value for signal "FD_DEBUG_sel" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(79): object "BCD4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(80): object "ASCII0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at FD_sensor_de_distancia.vhd(82): object "DONE" assigned a value but never read
+Warning (10540): VHDL Signal Declaration warning at FD_sensor_de_distancia.vhd(86): used explicit default value for signal "SERIAL1" because signal was never assigned a value
+Warning (10540): VHDL Signal Declaration warning at FD_sensor_de_distancia.vhd(86): used explicit default value for signal "SERIAL2" because signal was never assigned a value
+Warning (10540): VHDL Signal Declaration warning at FD_sensor_de_distancia.vhd(86): used explicit default value for signal "SERIAL3" because signal was never assigned a value
 Info: Elaborating entity "contador" for hierarchy "contador:CONT"
 Info: Elaborating entity "divisor" for hierarchy "divisor:DIVI"
 Warning (10542): VHDL Variable Declaration warning at divisor.vhd(20): used initial value expression for variable "zero6" because variable was never assigned a value
@@ -730,8 +698,9 @@ Warning (10542): VHDL Variable Declaration warning at divisor.vhd(21): used init
 Warning (10542): VHDL Variable Declaration warning at divisor.vhd(22): used initial value expression for variable "zero11" because variable was never assigned a value
 Info: Elaborating entity "binary_bcd" for hierarchy "binary_bcd:BIN_TO_BCD"
 Info: Elaborating entity "serial" for hierarchy "serial:SERIE"
-Warning (10540): VHDL Signal Declaration warning at serial.vhd(19): used explicit default value for signal "STARTBIT" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at serial.vhd(20): used explicit default value for signal "STOPBIT" because signal was never assigned a value
+Warning (10036): Verilog HDL or VHDL warning at serial.vhd(31): object "PARIDADE" assigned a value but never read
+Warning (10540): VHDL Signal Declaration warning at serial.vhd(32): used explicit default value for signal "STARTBIT" because signal was never assigned a value
+Warning (10540): VHDL Signal Declaration warning at serial.vhd(33): used explicit default value for signal "STOPBIT" because signal was never assigned a value
 Info: Elaborating entity "hex7seg_en" for hierarchy "hex7seg_en:SEG0"
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_fms3.tdf
     Info: Found entity 1: altsyncram_fms3
@@ -760,21 +729,17 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "FD_DEBUG_SERIAL1" is stuck at GND
     Warning (13410): Pin "FD_DEBUG_SERIAL2" is stuck at GND
     Warning (13410): Pin "FD_DEBUG_SERIAL3" is stuck at GND
-    Warning (13410): Pin "SAIDA_SERIAL" is stuck at GND
-Info: 3 registers lost all their fanouts during netlist optimizations. The first 3 are displayed below.
-    Info: Register "serial:SERIE|COUNT2[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "serial:SERIE|COUNT2[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "serial:SERIE|COUNT2[3]" lost all its fanouts during netlist optimizations.
+    Warning (13410): Pin "FD_DEBUG_sel" is stuck at GND
 Critical Warning: Partially connected in-system debug instance "auto_signaltap_0" to 3 of its 6 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 3 missing sources or connections.
-Info: Implemented 760 device resources after synthesis - the final resource count might be different
+Info: Implemented 864 device resources after synthesis - the final resource count might be different
     Info: Implemented 7 input pins
-    Info: Implemented 52 output pins
-    Info: Implemented 696 logic cells
+    Info: Implemented 97 output pins
+    Info: Implemented 755 logic cells
     Info: Implemented 4 RAM segments
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 283 megabytes
-    Info: Processing ended: Tue Mar 29 19:53:05 2016
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 284 megabytes
+    Info: Processing ended: Tue Mar 29 23:20:14 2016
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 

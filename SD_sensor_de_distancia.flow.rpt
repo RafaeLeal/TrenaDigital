@@ -1,5 +1,5 @@
 Flow report for SD_sensor_de_distancia
-Tue Mar 29 19:53:13 2016
+Tue Mar 29 23:20:22 2016
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 29 19:53:13 2016        ;
+; Flow Status                        ; Successful - Tue Mar 29 23:20:22 2016        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; SD_sensor_de_distancia                       ;
 ; Top-level Entity Name              ; FD_sensor_de_distancia                       ;
@@ -46,11 +46,11 @@ applicable agreement for further details.
 ; Device                             ; EP2C35F672C6                                 ;
 ; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; No                                           ;
-; Total logic elements               ; 647 / 33,216 ( 2 % )                         ;
-;     Total combinational functions  ; 531 / 33,216 ( 2 % )                         ;
-;     Dedicated logic registers      ; 442 / 33,216 ( 1 % )                         ;
-; Total registers                    ; 442                                          ;
-; Total pins                         ; 55 / 475 ( 12 % )                            ;
+; Total logic elements               ; 703 / 33,216 ( 2 % )                         ;
+;     Total combinational functions  ; 534 / 33,216 ( 2 % )                         ;
+;     Dedicated logic registers      ; 518 / 33,216 ( 2 % )                         ;
+; Total registers                    ; 518                                          ;
+; Total pins                         ; 100 / 475 ( 21 % )                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 512 / 483,840 ( < 1 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                               ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+------------------------+
 ; Option            ; Setting                ;
 +-------------------+------------------------+
-; Start date & time ; 03/29/2016 19:53:02    ;
+; Start date & time ; 03/29/2016 23:20:11    ;
 ; Main task         ; Compilation            ;
 ; Revision Name     ; SD_sensor_de_distancia ;
 +-------------------+------------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +------------------------------------+-----------------------------------------------+------------------------+------------------------+------------------+
 ; Assignment Name                    ; Value                                         ; Default Value          ; Entity Name            ; Section Id       ;
 +------------------------------------+-----------------------------------------------+------------------------+------------------------+------------------+
-; COMPILER_SIGNATURE_ID              ; 10995770589184.145929198219432                ; --                     ; --                     ; --               ;
+; COMPILER_SIGNATURE_ID              ; 10995770589184.145930441113124                ; --                     ; --                     ; --               ;
 ; ENABLE_SIGNALTAP                   ; On                                            ; --                     ; --                     ; --               ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                                            ; --                     ; --                     ; --               ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                                             ; --                     ; --                     ; --               ;
@@ -115,11 +115,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 283 MB              ; 00:00:03                           ;
-; Fitter                  ; 00:00:05     ; 1.0                     ; 322 MB              ; 00:00:05                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 287 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 197 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:08     ; --                      ; --                  ; 00:00:09                           ;
+; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 284 MB              ; 00:00:04                           ;
+; Fitter                  ; 00:00:05     ; 1.0                     ; 323 MB              ; 00:00:05                           ;
+; Assembler               ; 00:00:01     ; 1.0                     ; 289 MB              ; 00:00:01                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 199 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:08     ; --                      ; --                  ; 00:00:10                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

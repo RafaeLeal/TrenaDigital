@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Mar 29 19:53:04 2016
+Analysis & Synthesis Status : Successful - Tue Mar 29 23:20:14 2016
 Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
 Revision Name : SD_sensor_de_distancia
 Top-level Entity Name : FD_sensor_de_distancia
 Family : Cyclone II
-Total logic elements : 683
-    Total combinational functions : 529
-    Dedicated logic registers : 442
-Total registers : 442
-Total pins : 55
+Total logic elements : 742
+    Total combinational functions : 532
+    Dedicated logic registers : 518
+Total registers : 518
+Total pins : 100
 Total virtual pins : 0
 Total memory bits : 512
 Embedded Multiplier 9-bit elements : 0
